@@ -1,0 +1,41 @@
+/* Fonts */
+@font-face {
+    font-family: "Helios Antique Medium";
+    src: url(../../fonts/Helios-Antique/Helios_Antique-Medium.otf);
+}
+
+/* Default Colors */
+* {
+    -bg-gray: #18181A;
+    -bg-white: #E7E6E6;
+    
+    -logo-green: #9BC860;
+    -logo-pink: #E68ABA;
+}
+
+/* Styles */
+.root {
+    -fx-background-color: -bg-gray;
+}
+
+.container {
+    -fx-background-color: -bg-gray;
+}
+
+.text_loading {
+    -fx-font-family: "Helios Antique Medium";
+    -fx-text-fill: -bg-white;
+    -fx-font-size: 11;
+}
+
+.progress-bar .track {
+    -fx-background-color: transparent;
+    -fx-border-color: -bg-white;
+    -fx-padding: 0; 
+    -fx-border: 10;
+    -fx-border-radius: 100;
+}
+
+.progress-bar .bar {
+    -fx-background-color: -bg-white;
+}
