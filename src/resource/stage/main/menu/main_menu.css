@@ -1,0 +1,237 @@
+/* Fonts */
+@font-face {
+    font-family: "Helios Antique Black";
+    src: url(../../../fonts/Helios-Antique/Helios_Antique-Black.otf);
+}
+
+@font-face {
+    font-family: "Raitor Regular";
+    src: url(../../../fonts/Raitor-Regular/Raitor-Regular.ttf);
+}
+
+/* Default Colors */
+* {
+    -bg-gray        : #18181A;
+    -bg-white       : #E7E6E6;
+    -bg-lighter-grey: #74747d;
+    -bg-light-grey  : #414145;
+
+    
+    -logo-green : #9BC860;
+    -logo-pink  : #E68ABA;
+
+    /* ---- */
+
+    -bg-lives       : #863232;
+    -bg-lives-dark  : #562020;
+    -bg-heart       : #FF6F6F;
+
+    -bg-currency     : #8C7656;
+    -bg-currency-dark: #584A36;
+
+    -bg-shop         : #3C298F;
+    -bg-shop-dark    : #251957;
+    -bg-shop-purchase: #9BC860;
+    
+    -bg-exit: #863232;
+}
+
+/* Styles */
+.root {
+    -fx-background-color: -bg-gray;
+}
+
+.container {
+    -fx-background-color: -bg-gray;
+}
+
+.left {
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: -bg-light-grey;
+}
+
+.left .top {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: -bg-light-grey;
+}
+
+.left .bottom {
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: -bg-light-grey;
+}
+
+.right {
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: -bg-light-grey;
+}
+
+/* == LIVES == */
+.lives {
+    -fx-background-color: -bg-lives;
+}
+
+.lives .top {
+    -fx-border-width: 0 !important;
+}
+
+.lives .lb {
+    -fx-font-family: "Helios Antique Black";
+    -fx-font-size: 18;
+    -fx-text-fill: -bg-white;
+}
+
+.lives .bottom {
+    -fx-border-width: 0 !important;
+    -fx-background-color: -bg-lives-dark;
+}
+
+.lives .bottom .heart {
+    -fx-shape: "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z";
+    -fx-background-color: -bg-heart;
+    -fx-pref-width: 25;
+    -fx-pref-height: 22;
+    -fx-max-height: 22;
+}
+
+.lives .bottom .heart-empty {
+    -fx-shape: "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z";
+    -fx-background-color: transparent;
+    -fx-border-width: 3;
+    -fx-border-color: -bg-heart;
+    -fx-pref-width: 25;
+    -fx-pref-height: 22;
+    -fx-max-height: 22;
+}
+
+.lives .bottom .regen {
+    -fx-font-family: "Helios Antique Black";
+    -fx-font-size: 13;
+    -fx-text-fill: -bg-white;
+}
+
+/* Currency */
+
+.currency {
+    -fx-background-color: -bg-currency;
+    -fx-border-width: 3;
+    -fx-border-color: -bg-currency-dark;
+}
+
+.currency .left {
+    -fx-border-width: 0 1.5 0 0;
+    -fx-border-color: -bg-currency-dark;
+}
+
+.currency .right {
+    -fx-border-width: 0 0 0 1.5;
+    -fx-border-color: -bg-currency-dark;
+}
+
+.currency .lb {
+    -fx-font-family: "Helios Antique Black";
+    -fx-font-size: 15;
+    -fx-text-fill: -bg-white;
+}
+
+.currency .heading {
+    -fx-font-family: "Helios Antique Black";
+    -fx-font-size: 30;
+    -fx-text-fill: -bg-white;
+}
+
+/* SHOP */
+
+.shop {
+    -fx-background-color: -bg-shop;
+}
+
+.shop .top {
+    -fx-border-width: 0 !important;
+}
+
+.shop .lb {
+    -fx-font-family: "Helios Antique Black";
+    -fx-font-size: 18;
+    -fx-text-fill: -bg-white;
+}
+
+.shop .bottom {
+    -fx-border-width: 0 !important;
+    -fx-background-color: -bg-shop-dark;
+}
+
+.shop .item {
+    -fx-font-family: "Helios Antique Black";
+    -fx-font-size: 15;
+    -fx-text-fill: -bg-white;
+}
+
+.shop .price {
+    -fx-font-family: "Helios Antique Black";
+    -fx-font-size: 10;
+    -fx-text-fill: -bg-white;
+}
+
+.shop .purchase {
+    -fx-background-color: transparent;
+    -fx-font-family: "Helios Antique Black";
+    -fx-font-size: 12;
+    -fx-text-fill: -bg-white;
+    -fx-border-width: 1.5;
+    -fx-border-color: -bg-shop-purchase;
+    -fx-padding: 1 1 1 5;
+}
+
+.exit {
+    -fx-background-color: -bg-exit;
+    -fx-font-family: "Helios Antique Black";
+    -fx-font-size: 18;
+    -fx-text-fill: -bg-white;
+}
+
+/* CENTER */
+
+.scroll-pane, .scroll-pane > .viewport {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-border-radius: 0 ;
+    -fx-padding: 0;
+}
+
+.scroll-pane .scroll-bar:vertical .decrement-arrow,
+.scroll-pane .scroll-bar:vertical .increment-arrow {
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+}
+
+
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-radius: 10;
+    -fx-background-color: -bg-lighter-grey;
+}
+
+/* ACTS */
+
+.act-container {
+    -fx-padding: 0;
+}
+
+.act {
+    -fx-font-family: "Raitor Regular";
+    -fx-font-size: 20;
+    -fx-text-fill: -bg-white;
+    -fx-border-color: -logo-green;
+    -fx-border-width: 3;
+    -fx-padding: 20;
+
+}
+
+/* LEVEL */
