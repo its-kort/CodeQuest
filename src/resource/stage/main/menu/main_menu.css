@@ -50,57 +50,57 @@
 }
 
 .heart {
-    -fx-shape: "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z";
+    -fx-shape           : "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z";
     -fx-background-color: -bg-heart;
-    -fx-pref-width: 25;
-    -fx-pref-height: 20;
-    -fx-max-height: 22;
+    -fx-pref-width      : 25;
+    -fx-pref-height     : 20;
+    -fx-max-height      : 22;
 }
 
 .heart-empty {
-    -fx-shape: "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z";
+    -fx-shape           : "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z";
     -fx-background-color: transparent;
-    -fx-border-width: 3;
-    -fx-border-color: -bg-heart;
-    -fx-pref-width: 25;
-    -fx-pref-height: 20;
-    -fx-max-height: 22;
+    -fx-border-width    : 3;
+    -fx-border-color    : -bg-heart;
+    -fx-pref-width      : 25;
+    -fx-pref-height     : 20;
+    -fx-max-height      : 22;
 }
 
 .regen {
-    -fx-font-family: "Helios Antique Black";
-    -fx-text-fill: -bg-white;
-    -fx-font-size: 12;
+    -fx-font-family : "Helios Antique Black";
+    -fx-text-fill   : -bg-white;
+    -fx-font-size   : 12;
 }
 
 .hints {
-    -fx-border-width: 1.5;
-    -fx-border-color: -bg-hints;
-    -fx-border-radius: 4;
+    -fx-border-width    : 1.5;
+    -fx-border-color    : -bg-hints;
+    -fx-border-radius   : 4;
 }
 
 .hints-label {
-    -fx-font-family: "Helios Antique Black";
-    -fx-text-fill: -bg-white;
-    -fx-font-size: 15;
+    -fx-font-family : "Helios Antique Black";
+    -fx-text-fill   : -bg-white;
+    -fx-font-size   : 15;
 }
 /* CENTER */
 
 .scroll-pane, .scroll-pane > .viewport {
     -fx-background-color: transparent;
-    -fx-padding: 0;
+    -fx-padding         : 0;
 }
 
 .scroll-pane .scroll-bar:vertical {
     -fx-background-color: transparent;
-    -fx-border-radius: 0 ;
-    -fx-padding: 0;
+    -fx-border-radius   : 0 ;
+    -fx-padding         : 0;
 }
 
 .scroll-pane .scroll-bar:vertical .decrement-arrow,
 .scroll-pane .scroll-bar:vertical .increment-arrow {
     -fx-background-color: transparent;
-    -fx-border-radius: 0;
+    -fx-border-radius   : 0;
 }
 
 
@@ -110,30 +110,30 @@
 
 .scroll-pane .scroll-bar:vertical .thumb {
     -fx-background-radius: 10;
-    -fx-background-color: -bg-lighter-grey;
+    -fx-background-color : -bg-lighter-grey;
 }
 
 /* ACTS */
 
 .act {
-    -fx-background-color: -logo-green;
-    -fx-background-radius: 5;
-    -fx-pref-width: 750;
-    -fx-padding: 10;
+    -fx-background-color    : -logo-green;
+    -fx-background-radius   : 5;
+    -fx-pref-width          : 750;
+    -fx-padding             : 10;
 }
 
 .act-title {
-    -fx-font-family: "Raitor Regular";
-    -fx-font-size: 25;
-    -fx-text-fill: -white;
-    -fx-padding: 0;
+    -fx-font-family : "Raitor Regular";
+    -fx-font-size   : 25;
+    -fx-text-fill   : -white;
+    -fx-padding     : 0;
 }
 
 .act-subtitle {
-    -fx-font-family: "Helios Antique Medium";
-    -fx-font-size: 18;
-    -fx-text-fill: -white;
-    -fx-padding: 0;
+    -fx-font-family : "Helios Antique Medium";
+    -fx-font-size   : 18;
+    -fx-text-fill   : -white;
+    -fx-padding     : 0;
 }
 
 /* LEVEL */

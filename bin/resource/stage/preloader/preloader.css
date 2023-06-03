@@ -6,7 +6,7 @@
 
 /* Default Colors */
 * {
-    -bg-gray    : #18181A;
+    -bg-grey    : #18181A;
     -bg-white   : #E7E6E6;
     
     -logo-green : #9BC860;
@@ -15,11 +15,11 @@
 
 /* Styles */
 .root {
-    -fx-background-color: -bg-gray;
+    -fx-background-color: -bg-grey;
 }
 
 .container {
-    -fx-background-color: -bg-gray;
+    -fx-background-color: -bg-grey;
 }
 
 .text_loading {
@@ -31,11 +31,13 @@
 .progress-bar .track {
     -fx-background-color: transparent;
     -fx-border-color    : -bg-white;
-    -fx-padding      : 0; 
-    -fx-border       : 10;
-    -fx-border-radius: 100;
+    -fx-padding         : 0; 
+    -fx-border          : 10;
+    -fx-border-radius   : 100;
 }
 
 .progress-bar .bar {
-    -fx-background-color: -bg-white;
+    -fx-background-color    : -bg-white;
+    -fx-background-radius   : 100;
+
 } 
