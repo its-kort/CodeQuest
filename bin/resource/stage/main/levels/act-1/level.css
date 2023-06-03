@@ -1,0 +1,42 @@
+/* Fonts */
+@font-face {
+    font-family: "Helios Antique Black";
+    src: url(../../../fonts/Helios-Antique/Helios_Antique-Black.otf);
+}
+
+@font-face {
+    font-family: "Raitor Regular";
+    src: url(../../../fonts/Raitor-Regular/Raitor-Regular.ttf);
+}
+
+/* Default Colors */
+* {
+    -bg-gray        : #18181A;
+    -bg-white       : #E7E6E6;
+    -bg-lighter-grey: #74747d;
+    -bg-light-grey  : #414145;
+
+    
+    -logo-green : #9BC860;
+    -logo-pink  : #E68ABA;
+
+    /* ---- */
+
+    -bg-lives       : #863232;
+    -bg-lives-dark  : #562020;
+    -bg-heart       : #FF6F6F;
+
+    -bg-currency     : #8C7656;
+    -bg-currency-dark: #584A36;
+
+    -bg-shop         : #3C298F;
+    -bg-shop-dark    : #251957;
+    -bg-shop-purchase: #9BC860;
+    
+    -bg-exit: #863232;
+}
+
+/* Styles */
+.root {
+    -fx-background-color: -bg-gray;
+}
