@@ -112,6 +112,10 @@
     /* -fx-pref-width          : 200; */
 }
 
+.choice:disabled, .choice:disabled > * {
+    -fx-opacity: 1;
+}
+
 .choice {
     -fx-background-color    : transparent;
     -fx-font-family         : "Helios Antique Medium";
