@@ -19,11 +19,11 @@ public class resource {
         public String CORRECT         = "#54A44E";
         public String CORRECT_SHADOW  = "#3B5032";
 
-        public String INCORRECT_CHOICE        = "#C79D33";
-        public String INCORRECT_CHOICE_SHADOW = "#7A6B32";
+        public String INCORRECT_CHOICE        = "#BC5050";
+        public String INCORRECT_CHOICE_SHADOW = "#6A2C2C";
 
-        public String INCORRECT        = "#BC5050";
-        public String INCORRECT_SHADOW = "#6A2C2C";
+        public String INCORRECT        = "#C79D33";
+        public String INCORRECT_SHADOW = "#7A6B32";
 
     }
 
