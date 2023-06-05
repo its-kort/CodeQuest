@@ -6,29 +6,94 @@ import java.util.ResourceBundle;
 import config.levels.resource;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Rectangle2D;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Screen;
+import javafx.stage.Stage;
 
 public class l1 implements Initializable{
-    @FXML private Label question;
-    @FXML private Button c1;
-    @FXML private Button c2;
-    @FXML private Button c3;
-    @FXML private Button c4;
-    @FXML private Button submit;
+    @FXML private Label       question;
+    @FXML private Button      c1;
+    @FXML private Button      c2;
+    @FXML private Button      c3;
+    @FXML private Button      c4;
+    @FXML private Button      submit;
+    @FXML private Label       lives;
+    @FXML private ImageView   exit;
+    @FXML private VBox        popup;
+    @FXML private VBox        popup_lives;
+    @FXML private Label       score;
+    @FXML private ProgressBar progressbar;
+    @FXML private Label       tip;
 
+    Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
+    
     questions CONFIG = new questions();
-    resource STYLE = new resource();
+    resource STYLE   = new resource();
 
-    public int CURRENT_QUESTION = 1;
     public String CHOICE;
     public Button BUTTON;
-    public int COUNTER = 0;
+
+    public int LIVES            = STYLE.LIVES;
+    public int CURRENT_QUESTION = 1;
+    public int COUNTER          = 0;
+    public int SCORE            = 0;
+    public double PROGRESS      = 1;
+    public int TOTAL_QUESTIONS  = (int) (PROGRESS + CONFIG.TOTAL_QUESTIONS);
+    public int PASSING_SCORE    = (int) (TOTAL_QUESTIONS * STYLE.THRESHOLD);
     
     public void start() {
       loadQuestions();
+      popup.setVisible(false);
+      popup_lives.setVisible(false);
+      score.setText("SCORE: 0/" + String.valueOf(TOTAL_QUESTIONS - 1));
+      tip.setText("Earn at least " + String.valueOf(PASSING_SCORE) + " points!");
+      progressbar.setProgress(PROGRESS/TOTAL_QUESTIONS);
+      lives.setText(String.valueOf(LIVES));
+    }
+
+    @FXML
+    private void EXIT() {
+        popup.setVisible(true);
+    }
+
+    @FXML
+    private void YES(ActionEvent event) {
+        Stage primaryStage = (Stage) exit.getScene().getWindow();
+
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(STYLE.HOME)); 
+            Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
+            primaryStage.setScene(scene);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void NO(ActionEvent event) {
+        popup.setVisible(false);
+    }
+
+    @FXML
+    private void RESTART(ActionEvent event) {
+        Stage primaryStage = (Stage) exit.getScene().getWindow();
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(STYLE.A1_L1)); 
+            Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
+            primaryStage.setScene(scene);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private void loadQuestions() {
@@ -79,8 +144,17 @@ public class l1 implements Initializable{
             c3.setText(CONFIG.Q5.CHOICE_3);
             c4.setText(CONFIG.Q5.CHOICE_4);
         }
+
     }
 
+    private void DisableAllButtons() {
+        if (CURRENT_QUESTION > CONFIG.TOTAL_QUESTIONS) {
+            submit.setDisable(true);
+            progressHandler();
+            DisableButtons();
+            return;
+        }
+    }
     @FXML
     public void SELECT_C1(ActionEvent event) {
         CHOICE = c1.getText().toString();
@@ -131,7 +205,6 @@ public class l1 implements Initializable{
             return;
         }
         COUNTER++;
-        System.out.println(COUNTER);
         if (COUNTER == 1) {
             checkAnswer(BUTTON, CHOICE);
             nextQuestion(submit);
@@ -140,111 +213,126 @@ public class l1 implements Initializable{
         if (COUNTER == 2) {
             COUNTER = 0;
             loadQuestions();
+            DisableAllButtons();
+
         }
     }
 
+    private void DisableButtons() {
+        c1.setDisable(true);
+        c2.setDisable(true);
+        c3.setDisable(true);
+        c4.setDisable(true);
+    }
+
+    private void SetParentStyle(AnchorPane parent) {
+        parent.setStyle("-fx-background-color:" + STYLE.COLOR.INCORRECT + ";" + 
+                        "-fx-effect: dropshadow(gaussian," + STYLE.COLOR.INCORRECT_SHADOW + ", 0, 0, 0, 10);"
+                );
+    }
 
     private void checkAnswer(Button button, String answer) {
+        
         if (CURRENT_QUESTION == 1) {
             if (answer.equals(CONFIG.Q1.ANSWER)){
-                c1.setDisable(true);
-                c2.setDisable(true);
-                c3.setDisable(true);
-                c4.setDisable(true);
                 SetStyle(button, "CORRECT");
+                scoreHandler("CORRECT");
             } else {
                 SetStyle(button, "INCORRECT");
                 AnchorPane parent = (AnchorPane) c1.getParent();
-                parent.setStyle("-fx-background-color:" + STYLE.COLOR.INCORRECT + ";" + 
-                            "-fx-effect: dropshadow(gaussian," + STYLE.COLOR.INCORRECT_SHADOW + ", 0, 0, 0, 10);"
-                );
-                c1.setDisable(true);
-                c2.setDisable(true);
-                c3.setDisable(true);
-                c4.setDisable(true);
+                SetParentStyle(parent);
+                livesHandler();
+                scoreHandler("INCORRECT");
             }
         } else
+
         if (CURRENT_QUESTION == 2) {
             if (answer.equals(CONFIG.Q2.ANSWER)){
-                c1.setDisable(true);
-                c2.setDisable(true);
-                c3.setDisable(true);
-                c4.setDisable(true);
                 SetStyle(button, "CORRECT");
+                scoreHandler("CORRECT");
             } else {
                 SetStyle(button, "INCORRECT");
                 AnchorPane parent = (AnchorPane) c1.getParent();
-                parent.setStyle("-fx-background-color:" + STYLE.COLOR.INCORRECT + ";" + 
-                            "-fx-effect: dropshadow(gaussian," + STYLE.COLOR.INCORRECT_SHADOW + ", 0, 0, 0, 10);"
-                );
-                c1.setDisable(true);
-                c2.setDisable(true);
-                c3.setDisable(true);
-                c4.setDisable(true);
+                SetParentStyle(parent);
+                livesHandler();
+                scoreHandler("INCORRECT");
             }
         } else
+
         if (CURRENT_QUESTION == 3) {
             if (answer.equals(CONFIG.Q3.ANSWER)){
-                c1.setDisable(true);
-                c2.setDisable(true);
-                c3.setDisable(true);
-                c4.setDisable(true);
                 SetStyle(button, "CORRECT");
+                scoreHandler("CORRECT");
             } else {
                 SetStyle(button, "INCORRECT");
                 AnchorPane parent = (AnchorPane) c4.getParent();
-                parent.setStyle("-fx-background-color:" + STYLE.COLOR.INCORRECT + ";" + 
-                            "-fx-effect: dropshadow(gaussian," + STYLE.COLOR.INCORRECT_SHADOW + ", 0, 0, 0, 10);"
-                );
-                c1.setDisable(true);
-                c2.setDisable(true);
-                c3.setDisable(true);
-                c4.setDisable(true);
+                SetParentStyle(parent);
+                livesHandler();
+                scoreHandler("INCORRECT");
             }
         } else
+
         if (CURRENT_QUESTION == 4) {
             if (answer.equals(CONFIG.Q4.ANSWER)){
-                c1.setDisable(true);
-                c2.setDisable(true);
-                c3.setDisable(true);
-                c4.setDisable(true);
                 SetStyle(button, "CORRECT");
+                scoreHandler("CORRECT");
             } else {
                 SetStyle(button, "INCORRECT");
                 AnchorPane parent = (AnchorPane) c2.getParent();
-                parent.setStyle("-fx-background-color:" + STYLE.COLOR.INCORRECT + ";" + 
-                            "-fx-effect: dropshadow(gaussian," + STYLE.COLOR.INCORRECT_SHADOW + ", 0, 0, 0, 10);"
-                );
-                c1.setDisable(true);
-                c2.setDisable(true);
-                c3.setDisable(true);
-                c4.setDisable(true);
+                SetParentStyle(parent);
+                livesHandler();
+                scoreHandler("INCORRECT");
             }
         } else
+
         if (CURRENT_QUESTION == 5) {
             if (answer.equals(CONFIG.Q5.ANSWER)){
-                c1.setDisable(true);
-                c2.setDisable(true);
-                c3.setDisable(true);
-                c4.setDisable(true);
                 SetStyle(button, "CORRECT");
+                scoreHandler("CORRECT");
             } else {
                 SetStyle(button, "INCORRECT");
                 AnchorPane parent = (AnchorPane) c3.getParent();
-                parent.setStyle("-fx-background-color:" + STYLE.COLOR.INCORRECT + ";" + 
-                            "-fx-effect: dropshadow(gaussian," + STYLE.COLOR.INCORRECT_SHADOW + ", 0, 0, 0, 10);"
-                );
-                c1.setDisable(true);
-                c2.setDisable(true);
-                c3.setDisable(true);
-                c4.setDisable(true);
+                SetParentStyle(parent);
+                livesHandler();
+                scoreHandler("INCORRECT");
             }
         }
+
+        progressHandler();
+        DisableButtons();
+
+    }
+
+    private void livesHandler() {
+        LIVES--;
+        lives.setText(String.valueOf(LIVES));
+        if (LIVES <= 0) {
+            popup_lives.setVisible(true);
+        }
+    }
+
+    private void scoreHandler(String STATE) {
+        if (STATE.equals("CORRECT")) {
+            SCORE++;
+            if (SCORE >= TOTAL_QUESTIONS) {
+                SCORE = TOTAL_QUESTIONS;
+            }
+        } 
+        score.setText("SCORE: " + String.valueOf(SCORE) + "/" + (TOTAL_QUESTIONS - 1));
+    }
+
+    private void progressHandler() {
+        PROGRESS++;
+        progressbar.setProgress(PROGRESS/TOTAL_QUESTIONS);
     }
 
     private void nextQuestion(Button button) {
         CURRENT_QUESTION++;
+
         button.setText("NEXT");
+
+        
+
     }
 
     private void SetStyle(Button button, String STATE) {
@@ -280,7 +368,6 @@ public class l1 implements Initializable{
                             );
         }
     }    
-
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

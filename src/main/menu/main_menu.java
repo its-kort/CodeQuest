@@ -87,7 +87,7 @@ public class main_menu implements Initializable{
         Stage primaryStage = (Stage) a1_l1.getScene().getWindow();
 
         try {
-            Parent root = FXMLLoader.load(getClass().getResource(CONFIG_IMG.A1_L1)); 
+            Parent root = FXMLLoader.load(getClass().getResource(CONFIG_IMG.LESSON.A1_L1)); 
             Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
             primaryStage.setScene(scene);
         } catch (Exception e) {

@@ -1,18 +1,25 @@
 /* Fonts */
 @font-face {
     font-family: "Helios Antique Black";
-    src: url(../../../../fonts/Helios-Antique/Helios_Antique-Black.otf);
+    src: url(../../../fonts/Helios-Antique/Helios_Antique-Black.otf);
 }
 
 @font-face {
     font-family: "Helios Antique Medium";
-    src: url(../../../../fonts/Helios-Antique/Helios_Antique-Medium.otf);
+    src: url(../../../fonts/Helios-Antique/Helios_Antique-Medium.otf);
 }
 
 @font-face {
     font-family: "Raitor Regular";
-    src: url(../../../../fonts/Raitor-Regular/Raitor-Regular.ttf);
+    src: url(../../../fonts/Raitor-Regular/Raitor-Regular.ttf);
 }
+
+@font-face {
+    font-family: "Monaco";
+    src: url(../../../fonts/Monaco/Monaco.ttf);
+}
+
+
 
 /* Default Colors */
 * {
@@ -26,10 +33,14 @@
     -logo-green : #9BC860;
     -logo-pink  : #E68ABA;
 
+    -code-bg: #313135;
+
     /* ---- */
 
     -key-main   : #3C298F;
-    -key-shadow : #251957
+    -key-shadow : #251957;
+
+    -bg-exit    : #863232;
 }
 
 /* Styles */
@@ -43,7 +54,7 @@
 }
 
 .overview {
-    -fx-font-family : "Raitor Regular";
+    -fx-font-family : "Raitor Regular"; 
     -fx-text-fill   : -bg-white;
     -fx-font-size   : 25;
 }
@@ -93,7 +104,6 @@
     -fx-padding             : 10;
     -fx-effect              : dropshadow(gaussian, -key-shadow, 0, 0, 0, 10);
     -fx-pref-width          : 200;
-    -fx-text-alignment      : center;
 }
 
 .definition {
@@ -102,18 +112,34 @@
     -fx-font-size           : 20;
 }
 
+.example {
+    -fx-background-color: -code-bg;
+    -fx-font-family: "Monaco";
+    -fx-text-fill: -white;
+    -fx-font-size: 18;
+    -fx-padding: 10;
+}
+
 .bottom {
     -fx-border-width: 1 0 0 0;
     -fx-border-color: -bg-light-grey
 }
 
-.start {
+.start, .return {
+    -fx-pref-width: 200;
     -fx-background-color: transparent;
     -fx-font-family: "Helios Antique Black";
     -fx-font-size: 15;
     -fx-text-fill: -bg-white;
-    -fx-border-width: 1;
+    -fx-border-width: 2;
     -fx-border-radius: 5;
-    -fx-border-color: -logo-green;
     -fx-padding: 10 30;
+}
+
+.start {
+    -fx-border-color: -logo-green;
+}
+
+.return {
+    -fx-border-color: -bg-exit;
 }

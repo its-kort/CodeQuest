@@ -54,4 +54,6 @@ public class questions {
     public Q4 Q4 = new Q4();
     public Q5 Q5 = new Q5();
 
+    public int TOTAL_QUESTIONS = this.getClass().getDeclaredClasses().length;
+
 }

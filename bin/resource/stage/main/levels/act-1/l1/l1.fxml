@@ -13,28 +13,35 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" stylesheets="@../level.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.levels.act_1.l1.l1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1500.0" stylesheets="@../../level.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.levels.act_1.l1.l1">
    <children>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
-            <AnchorPane prefHeight="75.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <AnchorPane BorderPane.alignment="CENTER">
                <children>
                   <BorderPane styleClass="top" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <left>
                         <HBox alignment="CENTER_LEFT" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
                            <children>
-                              <Pane prefHeight="200.0" prefWidth="200.0" styleClass="heart" />
-                              <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="heart" />
-                              <Pane layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="heart" />
-                              <Pane layoutX="143.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="heart" />
-                              <Pane layoutX="160.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="heart-empty" />
+                              <VBox>
+                                 <children>
+                                    <Label fx:id="score" styleClass="score" text="SCORE: x/y" />
+                                    <Label fx:id="tip" layoutX="10.0" layoutY="10.0" styleClass="tip" text="Earn at least x points!" wrapText="true" />
+                                 </children>
+                              </VBox>
                            </children>
                         </HBox>
                      </left>
                      <center>
                         <HBox alignment="CENTER" prefWidth="200.0" spacing="75.0" BorderPane.alignment="CENTER">
                            <children>
-                              <ImageView fitHeight="20.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="exit" fitHeight="20.0" fitWidth="200.0" onMouseClicked="#EXIT" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../../../../media/acts/close.png" />
                                  </image>
@@ -42,27 +49,19 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </ImageView>
-                              <ProgressBar prefHeight="12.0" prefWidth="500.0" progress="0.65" HBox.hgrow="NEVER" />
+                              <ProgressBar fx:id="progressbar" prefHeight="12.0" prefWidth="500.0" progress="0.12" HBox.hgrow="NEVER" />
                            </children>
                         </HBox>
                      </center>
                      <right>
-                        <HBox alignment="CENTER_RIGHT" prefWidth="200.0" BorderPane.alignment="CENTER">
+                        <HBox alignment="CENTER_RIGHT" prefWidth="200.0" spacing="15.0" BorderPane.alignment="CENTER">
                            <children>
-                              <HBox alignment="CENTER" fillHeight="false" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" spacing="10.0" styleClass="hints" HBox.hgrow="NEVER">
-                                 <children>
-                                    <ImageView fitHeight="30.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../../../../../media/shop/hint2.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label styleClass="hints-label" text="HINTS: 5" />
-                                 </children>
-                                 <padding>
-                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                 </padding>
-                              </HBox>
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" styleClass="heart" />
+                              <Label fx:id="lives" styleClass="lives" text="x" />
                            </children>
+                           <padding>
+                              <Insets right="30.0" />
+                           </padding>
                         </HBox>
                      </right>
                   </BorderPane>
@@ -73,23 +72,24 @@
             </AnchorPane>
          </top>
          <bottom>
-            <AnchorPane prefHeight="100.0" prefWidth="200.0" styleClass="bottom" BorderPane.alignment="CENTER">
+            <AnchorPane styleClass="bottom" BorderPane.alignment="CENTER">
                <children>
                   <HBox alignment="CENTER" spacing="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Button maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="use-hint" text="USE HINT">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Button>
                         <Button fx:id="submit" layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SUBMIT" styleClass="submit" text="SUBMIT">
                            <cursor>
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
                      </children>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
                   </HBox>
                </children>
+               <padding>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </padding>
             </AnchorPane>
          </bottom>
          <left>
@@ -99,13 +99,13 @@
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
          </right>
          <center>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <AnchorPane BorderPane.alignment="CENTER">
                <children>
                   <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="question-container">
                            <children>
-                              <Label fx:id="question" styleClass="question" text="It is a program that transforms a written programming language into a code that can be understood by the computer’s processor." textOverrun="CLIP" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <Label fx:id="question" styleClass="question" text="Question" textOverrun="CLIP" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                            </children>
                            <VBox.margin>
                               <Insets bottom="50.0" />
@@ -115,7 +115,7 @@
                            <children>
                               <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" styleClass="choice-container" HBox.hgrow="ALWAYS">
                                  <children>
-                                    <Button fx:id="c1" mnemonicParsing="false" onAction="#SELECT_C1" styleClass="choice" text="Compiler" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <Button fx:id="c1" mnemonicParsing="false" onAction="#SELECT_C1" styleClass="choice" text="Choice 1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <cursor>
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
@@ -130,7 +130,7 @@
                                     <Insets left="20.0" />
                                  </HBox.margin>
                                  <children>
-                                    <Button fx:id="c2" mnemonicParsing="false" onAction="#SELECT_C2" styleClass="choice" text="Software" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <Button fx:id="c2" mnemonicParsing="false" onAction="#SELECT_C2" styleClass="choice" text="Choice 2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <cursor>
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
@@ -149,7 +149,7 @@
                                     <Insets right="20.0" />
                                  </HBox.margin>
                                  <children>
-                                    <Button fx:id="c3" mnemonicParsing="false" onAction="#SELECT_C3" styleClass="choice" text="Application" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <Button fx:id="c3" mnemonicParsing="false" onAction="#SELECT_C3" styleClass="choice" text="Choice 3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <cursor>
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
@@ -161,7 +161,7 @@
                                     <Insets left="20.0" />
                                  </HBox.margin>
                                  <children>
-                                    <Button fx:id="c4" mnemonicParsing="false" onAction="#SELECT_C4" styleClass="choice" text="Translator" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <Button fx:id="c4" mnemonicParsing="false" onAction="#SELECT_C4" styleClass="choice" text="Choice 4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <cursor>
                                           <Cursor fx:constant="HAND" />
                                        </cursor>
@@ -179,5 +179,57 @@
             </AnchorPane>
          </center>
       </BorderPane>
+      <VBox fx:id="popup" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="popup-container" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" styleClass="popup">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label alignment="CENTER" styleClass="popup-msg" text="Are you sure you want to quit this level? &#10;Progress will not be saved." textAlignment="CENTER" wrapText="true" />
+                  <HBox alignment="CENTER" spacing="50.0">
+                     <children>
+                        <Button maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#NO" styleClass="no" text="No" wrapText="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#YES" styleClass="yes" text="Yes" wrapText="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox fx:id="popup_lives" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" styleClass="popup-container" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" styleClass="popup">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label alignment="CENTER" styleClass="popup-msg" text="You have run out of lives!" textAlignment="CENTER" wrapText="true" />
+                  <HBox alignment="CENTER" spacing="50.0">
+                     <children>
+                        <Button maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#YES" styleClass="return-menu" text="Return to Menu" wrapText="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button layoutX="245.0" layoutY="10.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#RESTART" styleClass="restart-level" text="Restart Level" wrapText="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>

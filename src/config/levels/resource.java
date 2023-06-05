@@ -6,6 +6,16 @@ public class resource {
     public Image LEVEL_UNLOCKED = new Image("resource/media/menu/stage.png");
     public Image LEVEL_LOCKED  = new Image("resource/media/menu/stage_locked.png");
 
+    public String HOME = "/resource/stage/main/menu/main_menu.fxml";
+
+    public int LIVES           = 3;
+    public int TOTAL_QUESTIONS = 10;
+    public double THRESHOLD    = 0.8;
+
+    public class LESSON {
+        public String A1_L1 = "/resource/stage/main/levels/act-1/l1/lesson.fxml";
+    }
+    
     public String A1_L1 = "/resource/stage/main/levels/act-1/l1/l1.fxml";
 
     public class STYLE {
@@ -27,5 +37,6 @@ public class resource {
 
     }
 
-    public STYLE COLOR = new STYLE();
+    public STYLE COLOR   = new STYLE();
+    public LESSON LESSON = new LESSON();
 }
