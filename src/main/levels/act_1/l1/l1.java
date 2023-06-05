@@ -43,21 +43,21 @@ public class l1 implements Initializable{
     public String CHOICE;
     public Button BUTTON;
 
-    public int LIVES            = STYLE.LIVES;
-    public int CURRENT_QUESTION = 1;
-    public int COUNTER          = 0;
-    public int SCORE            = 0;
-    public double PROGRESS      = 1;
-    public int TOTAL_QUESTIONS  = (int) (PROGRESS + CONFIG.TOTAL_QUESTIONS);
-    public int PASSING_SCORE    = (int) (TOTAL_QUESTIONS * STYLE.THRESHOLD);
+    public int    LIVES            = STYLE.LIVES;
+    public int    CURRENT_QUESTION = 1;
+    public int    COUNTER          = 0;
+    public int    SCORE            = 0;
+    public double PROGRESS         = 0;
+    public int    TOTAL_QUESTIONS  = (int) (PROGRESS + CONFIG.TOTAL_QUESTIONS);
+    public int    PASSING_SCORE    = (int) (TOTAL_QUESTIONS * STYLE.THRESHOLD);
     
     public void start() {
       loadQuestions();
       popup.setVisible(false);
       popup_lives.setVisible(false);
-      score.setText("SCORE: 0/" + String.valueOf(TOTAL_QUESTIONS - 1));
+      score.setText("SCORE: 0/" + String.valueOf(CONFIG.TOTAL_QUESTIONS));
       tip.setText("Earn at least " + String.valueOf(PASSING_SCORE) + " points!");
-      progressbar.setProgress(PROGRESS/TOTAL_QUESTIONS);
+      progressbar.setProgress(PROGRESS/CONFIG.TOTAL_QUESTIONS);
       lives.setText(String.valueOf(LIVES));
     }
 
@@ -69,7 +69,6 @@ public class l1 implements Initializable{
     @FXML
     private void YES(ActionEvent event) {
         Stage primaryStage = (Stage) exit.getScene().getWindow();
-
         try {
             Parent root = FXMLLoader.load(getClass().getResource(STYLE.HOME)); 
             Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
@@ -88,7 +87,7 @@ public class l1 implements Initializable{
     private void RESTART(ActionEvent event) {
         Stage primaryStage = (Stage) exit.getScene().getWindow();
         try {
-            Parent root = FXMLLoader.load(getClass().getResource(STYLE.A1_L1)); 
+            Parent root = FXMLLoader.load(getClass().getResource(STYLE.LEVEL.A1_L1)); 
             Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
             primaryStage.setScene(scene);
         } catch (Exception e) {
@@ -155,6 +154,7 @@ public class l1 implements Initializable{
             return;
         }
     }
+    
     @FXML
     public void SELECT_C1(ActionEvent event) {
         CHOICE = c1.getText().toString();
@@ -208,13 +208,13 @@ public class l1 implements Initializable{
         if (COUNTER == 1) {
             checkAnswer(BUTTON, CHOICE);
             nextQuestion(submit);
+            
         } else
 
         if (COUNTER == 2) {
             COUNTER = 0;
             loadQuestions();
             DisableAllButtons();
-
         }
     }
 
@@ -314,28 +314,45 @@ public class l1 implements Initializable{
     private void scoreHandler(String STATE) {
         if (STATE.equals("CORRECT")) {
             SCORE++;
-            if (SCORE >= TOTAL_QUESTIONS) {
-                SCORE = TOTAL_QUESTIONS;
+            if (SCORE >= CONFIG.TOTAL_QUESTIONS) {
+                SCORE  = CONFIG.TOTAL_QUESTIONS;
             }
         } 
-        score.setText("SCORE: " + String.valueOf(SCORE) + "/" + (TOTAL_QUESTIONS - 1));
+        score.setText("SCORE: " + String.valueOf(SCORE) + "/" + (CONFIG.TOTAL_QUESTIONS));
     }
 
     private void progressHandler() {
         PROGRESS++;
-        progressbar.setProgress(PROGRESS/TOTAL_QUESTIONS);
+        progressbar.setProgress(PROGRESS/CONFIG.TOTAL_QUESTIONS);
     }
 
     private void nextQuestion(Button button) {
         CURRENT_QUESTION++;
-
         button.setText("NEXT");
+        levelComplete(button);
+    }
 
-        
+    private void levelComplete(Button button) {
+        if (CURRENT_QUESTION > CONFIG.TOTAL_QUESTIONS) {
+            Stage primaryStage = (Stage) button.getScene().getWindow();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(STYLE.LEVEL_COMPLETE)); 
+            try {
+                Parent root = loader.load();
+                Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
+                primaryStage.setScene(scene);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
+            completed SEND_SCORE = loader.getController();
+            SEND_SCORE.setTotal(SCORE, CONFIG.TOTAL_QUESTIONS);
+            return;
+        }
     }
 
     private void SetStyle(Button button, String STATE) {
+        if (button == null) return;
+        
         if (STATE.equals("DEFAULT")) {
             AnchorPane parent = (AnchorPane) button.getParent();
             parent.setStyle("-fx-background-color:" + STYLE.COLOR.DESELECT + ";" + 
@@ -373,6 +390,4 @@ public class l1 implements Initializable{
     public void initialize(URL location, ResourceBundle resources) {
         start();
     }
-
-
 }

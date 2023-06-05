@@ -1,0 +1,106 @@
+/* Fonts */
+@font-face {
+    font-family: "Helios Antique Black";
+    src: url(../../../fonts/Helios-Antique/Helios_Antique-Black.otf);
+}
+
+@font-face {
+    font-family: "Helios Antique Medium";
+    src: url(../../../fonts/Helios-Antique/Helios_Antique-Medium.otf);
+}
+
+@font-face {
+    font-family: "Raitor Regular";
+    src: url(../../../fonts/Raitor-Regular/Raitor-Regular.ttf);
+}
+
+/* Default Colors */
+* {
+    -white          : #FFFFFF;
+    -dark           : rgba(0, 0, 0, 0.5);
+
+    -bg-grey        : #18181A;
+    -bg-white       : #E7E6E6;
+    -bg-lighter-grey: #74747d;
+    -bg-light-grey  : #414145;
+
+    
+    -logo-green : #9BC860;
+    -logo-pink  : #E68ABA;
+
+    /* ---- */
+
+    -bg-heart       : #FF6F6F;
+
+    -bg-hints       : #C8B866;
+
+    -choice-main    : #414145;
+    -choice-shadow  : #303034;
+    
+    -bg-exit        : #863232;
+
+    -bg-shop        : #3C298F;
+
+    -yes-main       : #78a53d;
+    -yes-shadow     : #475d29;
+
+    -no-main        : #863232 ;
+    -no-shadow      : #4d2929;
+}
+
+/* Styles */
+.root {
+    -fx-background-color: -bg-grey;
+}
+
+.level_complete, .total_score, .score {
+    -fx-font-family: "Helios Antique Black";
+    -fx-text-fill: -white;
+}
+
+.level_complete {
+    -fx-font-size: 38;
+}
+
+.total_container {
+    -fx-background-color: -logo-green;
+    -fx-background-radius: 10;
+    -fx-pref-width: 300;
+    -fx-padding: 8;
+}
+
+.total_score {
+    -fx-font-size: 24;
+    -fx-padding: 6;
+}
+
+.score {
+    -fx-background-color: -bg-grey;
+    -fx-background-radius: 8;
+    -fx-font-size: 40;
+    -fx-padding: 15;
+}
+
+.bottom {
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: -bg-light-grey
+}
+
+.return, .submit {
+    -fx-background-color: transparent;
+    -fx-border-width    : 2;
+    -fx-border-radius   : 3;
+    -fx-font-family     : "Helios Antique Black";
+    -fx-font-size       : 18;
+    -fx-text-fill       : -bg-white;
+    -fx-padding         : 10;
+    -fx-pref-width      : 250;
+}
+
+.submit {
+    -fx-border-color: -logo-green;
+}
+
+.return {
+    -fx-border-color: -no-main;
+}
