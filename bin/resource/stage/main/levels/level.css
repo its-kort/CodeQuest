@@ -14,6 +14,11 @@
     src: url(../../../fonts/Raitor-Regular/Raitor-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Monaco";
+    src: url(../../../fonts/Monaco/Monaco.ttf);
+}
+
 /* Default Colors */
 * {
     -white          : #FFFFFF;
@@ -36,10 +41,12 @@
 
     -choice-main    : #414145;
     -choice-shadow  : #303034;
-    
+     
     -bg-exit        : #863232;
 
     -bg-shop        : #3C298F;
+
+    -code-bg        : #313135;
 
     -yes-main       : #78a53d;
     -yes-shadow     : #475d29;
@@ -118,11 +125,19 @@
     -fx-pref-width: 950;
 }
 
-.question {
-    -fx-font-family: "Helios Antique Medium";
+.question, .example {
     -fx-font-size: 20;
     -fx-text-fill: -white;
-    -fx-padding: 20;
+}
+
+.question {
+    -fx-font-family: "Helios Antique Medium";
+}
+
+.example {
+    -fx-font-family: "Monaco";
+    -fx-background-color: -code-bg;
+    -fx-padding: 10;
 }
 
 .choice-container {

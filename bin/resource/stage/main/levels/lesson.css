@@ -95,15 +95,21 @@
     -fx-alignment: center_left;
 }
 
-.key {
+.key, .key-code {
     -fx-background-color    : -key-main;
     -fx-background-radius   : 3;
-    -fx-font-family         : "Helios Antique Medium";
     -fx-text-fill           : -white;
     -fx-font-size           : 20;
     -fx-padding             : 10;
     -fx-effect              : dropshadow(gaussian, -key-shadow, 0, 0, 0, 10);
     -fx-pref-width          : 200;
+}
+
+.key {
+    -fx-font-family         : "Helios Antique Medium";
+}
+.key-code {
+    -fx-font-family         : "Monaco";
 }
 
 .definition {

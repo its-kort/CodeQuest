@@ -14,6 +14,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import main.data.ResourceManager;
+import main.data.SaveData;
 
 public class completed implements Initializable {
     @FXML private Label total_score;
@@ -25,6 +27,18 @@ public class completed implements Initializable {
     
     public void setTotal(int score, int questions) {
         total_score.setText(score + "/" + questions);
+    }
+
+    public void start() {
+        SaveData data = new SaveData();
+        data.LEVEL = data.ACT_1.L1;
+
+        try {
+            ResourceManager.save(data, data.NAME);
+            System.out.println("Data saved!");
+        } catch (Exception e) {
+            System.out.println("Could not save data: " + e.getMessage());
+        }
     }
 
     @FXML
@@ -41,11 +55,18 @@ public class completed implements Initializable {
 
     @FXML
     private void NEXT(ActionEvent event) {
-
+        try {
+            Stage primaryStage = (Stage) total_score.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource(CONFIG.LESSON.A1_L2)); 
+            Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
+            primaryStage.setScene(scene);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        start();
     }
 }

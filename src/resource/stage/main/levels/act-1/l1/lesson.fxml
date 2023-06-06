@@ -11,8 +11,9 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1080.0" stylesheets="@../../lesson.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.levels.act_1.l1.lesson">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2000.0" prefWidth="1080.0" stylesheets="@../../lesson.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.levels.act_1.l1.lesson">
    <children>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -65,16 +66,16 @@
                            <children>
                               <VBox prefHeight="200.0" prefWidth="100.0" styleClass="container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <HBox styleClass="item">
+                                    <HBox layoutX="60.0" layoutY="60.0" styleClass="item">
                                        <children>
                                           <VBox>
                                              <children>
-                                                <Label alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" styleClass="key" text="Compiler" wrapText="true" />
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Java" wrapText="true" />
                                              </children>
                                           </VBox>
                                           <VBox>
                                              <children>
-                                                <Label styleClass="definition" text="A program that transforms a written programming language into a code that can be understood by the computer’s processor." wrapText="true" />
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A class-based, object-oriented programming language based on C and C++. It is a high-level language that is easy to read and understand." wrapText="true" />
                                              </children>
                                           </VBox>
                                        </children>
@@ -83,13 +84,55 @@
                                        <children>
                                           <VBox>
                                              <children>
-                                                <Label alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" styleClass="key" text="Variable" wrapText="true" />
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="James Gosling" wrapText="true" />
                                              </children>
                                           </VBox>
                                           <VBox>
                                              <children>
-                                                <Label styleClass="definition" text="A programmer-assigned name for a specific address, which holds data, in the computer’s memory." wrapText="true" />
-                                                <Label layoutX="10.0" layoutY="10.0" styleClass="definition" text="&#10;Example:" wrapText="true">
+                                                <Label minHeight="-Infinity" styleClass="definition" text="The creator of the Java programming language. He had only one goal in creating the programming language — “Write once, run anywhere.” " wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="205.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Byte" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A numeric data type which occupies 8 bits and holds integer values from -128 to 127." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Compiler" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A program that transforms a written programming language into a code that can be understood by the computer’s processor." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="60.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Variable" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A programmer-assigned name for a specific address, which holds data, in the computer’s memory." wrapText="true" />
+                                                <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text="&#10;Example:" wrapText="true">
                                                    <VBox.margin>
                                                       <Insets />
                                                    </VBox.margin></Label>
@@ -97,10 +140,24 @@
                                                    <children>
                                                       <AnchorPane>
                                                          <children>
-                                                            <Label styleClass="example" text="MyVariable = 10;&#10;System.out.println(MyVariable);&#10;&#10;OUTPUT:&#10;10" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                            <Label minHeight="-Infinity" styleClass="example" text="MyVariable = 10;&#10;&#10;System.out.println(MyVariable);&#10;&#10;OUTPUT:&#10;10" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                                          </children>
                                                       </AnchorPane>
                                                    </children>
+                                                </VBox>
+                                                <VBox>
+                                                   <children>
+                                                      <TextFlow maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="In the above code block, &#10;" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="MyVariable&#10;" wrapText="true" />
+                                                            <Label layoutX="271.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text=" is the variable. &#10;" wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
                                                 </VBox>
                                              </children>
                                           </VBox>
@@ -108,14 +165,14 @@
                                     </HBox>
                                     <HBox layoutX="60.0" layoutY="160.0" styleClass="item">
                                        <children>
-                                          <VBox>
+                                          <VBox minHeight="-Infinity">
                                              <children>
                                                 <Label alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" styleClass="key" text="Data" wrapText="true" />
                                              </children>
                                           </VBox>
                                           <VBox>
                                              <children>
-                                                <Label styleClass="definition" text="Information that is stored digitally." wrapText="true" />
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Information that is stored digitally." wrapText="true" />
                                              </children>
                                           </VBox>
                                        </children>
@@ -129,7 +186,31 @@
                                           </VBox>
                                           <VBox>
                                              <children>
-                                                <Label styleClass="definition" text="A unique name that identifies an element in a program." wrapText="true" />
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A unique name that identifies an element in a program. Identifiers start with either an alphabet or an underscore (_). In identifiers, both uppercase and lowercase letters are distinct." wrapText="true" />
+                                                <Label minHeight="-Infinity" styleClass="definition" text="&#10;Example:" wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="public class MyIdentifier {&#10;&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </VBox>
+                                                <VBox>
+                                                   <children>
+                                                      <TextFlow maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="In the code block above, &#10;" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="MyIdentifier" wrapText="true" />
+                                                            <Label layoutX="271.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text=" is the identifier. &#10;" wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
                                              </children>
                                           </VBox>
                                        </children>

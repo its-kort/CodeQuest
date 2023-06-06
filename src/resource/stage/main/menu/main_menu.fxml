@@ -74,7 +74,7 @@
                                                             <Cursor fx:constant="HAND" />
                                                          </cursor>
                                                       </ImageView>
-                                                      <ImageView fx:id="a1_l2" fitHeight="50.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                      <ImageView fx:id="a1_l2" fitHeight="50.0" fitWidth="200.0" onMouseClicked="#LEVEL_2" pickOnBounds="true" preserveRatio="true">
                                                          <image>
                                                             <Image url="@../../../media/menu/stage.png" />
                                                          </image>

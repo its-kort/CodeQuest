@@ -22,6 +22,7 @@ import javafx.stage.Stage;
 
 public class l1 implements Initializable{
     @FXML private Label       question;
+    @FXML private Label       example;
     @FXML private Button      c1;
     @FXML private Button      c2;
     @FXML private Button      c3;
@@ -106,44 +107,159 @@ public class l1 implements Initializable{
         c2.setDisable(false);
         c3.setDisable(false);
         c4.setDisable(false);
+        example.setManaged(false);
+        example.setVisible(false);
+
 
 
         if (CURRENT_QUESTION == 1) {
             question.setText(CONFIG.Q1.QUESTION);
+            
+            if(CONFIG.Q1.EXAMPLE != null) {
+                example.setManaged(!example.isManaged());
+                example.setVisible(!example.isVisible());
+                example.setText(CONFIG.Q1.EXAMPLE);
+            }
+
             c1.setText(CONFIG.Q1.CHOICE_1);
             c2.setText(CONFIG.Q1.CHOICE_2);
             c3.setText(CONFIG.Q1.CHOICE_3);
             c4.setText(CONFIG.Q1.CHOICE_4);
         } else 
+
         if (CURRENT_QUESTION == 2) {
             question.setText(CONFIG.Q2.QUESTION);
+            
+            if(CONFIG.Q2.EXAMPLE != null) {
+                example.setManaged(!example.isManaged());
+                example.setVisible(!example.isVisible());
+                example.setText(CONFIG.Q2.EXAMPLE);
+            }
             c1.setText(CONFIG.Q2.CHOICE_1);
             c2.setText(CONFIG.Q2.CHOICE_2);
             c3.setText(CONFIG.Q2.CHOICE_3);
             c4.setText(CONFIG.Q2.CHOICE_4);
         } else
+
         if (CURRENT_QUESTION == 3) {
             question.setText(CONFIG.Q3.QUESTION);
+            
+            if(CONFIG.Q3.EXAMPLE != null) {
+                example.setManaged(!example.isManaged());
+                example.setVisible(!example.isVisible());
+                example.setText(CONFIG.Q3.EXAMPLE);
+            }
+
             c1.setText(CONFIG.Q3.CHOICE_1);
             c2.setText(CONFIG.Q3.CHOICE_2);
             c3.setText(CONFIG.Q3.CHOICE_3);
             c4.setText(CONFIG.Q3.CHOICE_4);
         } else
+
         if (CURRENT_QUESTION == 4) {
             question.setText(CONFIG.Q4.QUESTION);
+
+            if(CONFIG.Q4.EXAMPLE != null) {
+                example.setManaged(!example.isManaged());
+                example.setVisible(!example.isVisible());
+                example.setText(CONFIG.Q4.EXAMPLE);
+            }
+
             c1.setText(CONFIG.Q4.CHOICE_1);
             c2.setText(CONFIG.Q4.CHOICE_2);
             c3.setText(CONFIG.Q4.CHOICE_3);
             c4.setText(CONFIG.Q4.CHOICE_4);
         } else
+
         if (CURRENT_QUESTION == 5) {
             question.setText(CONFIG.Q5.QUESTION);
+
+            if(CONFIG.Q5.EXAMPLE != null) {
+                example.setManaged(!example.isManaged());
+                example.setVisible(!example.isVisible());
+                example.setText(CONFIG.Q5.EXAMPLE);
+            }
+
             c1.setText(CONFIG.Q5.CHOICE_1);
             c2.setText(CONFIG.Q5.CHOICE_2);
             c3.setText(CONFIG.Q5.CHOICE_3);
             c4.setText(CONFIG.Q5.CHOICE_4);
-        }
+        } else
 
+        if (CURRENT_QUESTION == 6) {
+            question.setText(CONFIG.Q6.QUESTION);
+
+            if(CONFIG.Q6.EXAMPLE != null) {
+                example.setManaged(!example.isManaged());
+                example.setVisible(!example.isVisible());
+                example.setText(CONFIG.Q6.EXAMPLE);
+            }
+
+            c1.setText(CONFIG.Q6.CHOICE_1);
+            c2.setText(CONFIG.Q6.CHOICE_2);
+            c3.setText(CONFIG.Q6.CHOICE_3);
+            c4.setText(CONFIG.Q6.CHOICE_4);
+        } else
+
+        if (CURRENT_QUESTION == 7) {
+            question.setText(CONFIG.Q7.QUESTION);
+
+            if(CONFIG.Q7.EXAMPLE != null) {
+                example.setManaged(!example.isManaged());
+                example.setVisible(!example.isVisible());
+                example.setText(CONFIG.Q7.EXAMPLE);
+            }
+
+            c1.setText(CONFIG.Q7.CHOICE_1);
+            c2.setText(CONFIG.Q7.CHOICE_2);
+            c3.setText(CONFIG.Q7.CHOICE_3);
+            c4.setText(CONFIG.Q7.CHOICE_4);
+        } else
+
+        if (CURRENT_QUESTION == 8) {
+            question.setText(CONFIG.Q8.QUESTION);
+
+            if(CONFIG.Q8.EXAMPLE != null) {
+                example.setManaged(!example.isManaged());
+                example.setVisible(!example.isVisible());
+                example.setText(CONFIG.Q8.EXAMPLE);
+            }
+
+            c1.setText(CONFIG.Q8.CHOICE_1);
+            c2.setText(CONFIG.Q8.CHOICE_2);
+            c3.setText(CONFIG.Q8.CHOICE_3);
+            c4.setText(CONFIG.Q8.CHOICE_4);
+        } else
+
+        if (CURRENT_QUESTION == 9) {
+            question.setText(CONFIG.Q9.QUESTION);
+
+            if(CONFIG.Q9.EXAMPLE != null) {
+                example.setManaged(!example.isManaged());
+                example.setVisible(!example.isVisible());
+                example.setText(CONFIG.Q9.EXAMPLE);
+            }
+
+            c1.setText(CONFIG.Q9.CHOICE_1);
+            c2.setText(CONFIG.Q9.CHOICE_2);
+            c3.setText(CONFIG.Q9.CHOICE_3);
+            c4.setText(CONFIG.Q9.CHOICE_4);
+        } else
+
+        if (CURRENT_QUESTION == 10) {
+            question.setText(CONFIG.Q10.QUESTION);
+
+            if(CONFIG.Q10.EXAMPLE != null) {
+                example.setManaged(!example.isManaged());
+                example.setVisible(!example.isVisible());
+                example.setText(CONFIG.Q10.EXAMPLE);
+            }
+
+            c1.setText(CONFIG.Q10.CHOICE_1);
+            c2.setText(CONFIG.Q10.CHOICE_2);
+            c3.setText(CONFIG.Q10.CHOICE_3);
+            c4.setText(CONFIG.Q10.CHOICE_4);
+        }
     }
 
     private void DisableAllButtons() {
@@ -215,6 +331,7 @@ public class l1 implements Initializable{
             COUNTER = 0;
             loadQuestions();
             DisableAllButtons();
+            levelComplete(submit);
         }
     }
 
@@ -278,7 +395,7 @@ public class l1 implements Initializable{
                 scoreHandler("CORRECT");
             } else {
                 SetStyle(button, "INCORRECT");
-                AnchorPane parent = (AnchorPane) c2.getParent();
+                AnchorPane parent = (AnchorPane) c3.getParent();
                 SetParentStyle(parent);
                 livesHandler();
                 scoreHandler("INCORRECT");
@@ -292,6 +409,71 @@ public class l1 implements Initializable{
             } else {
                 SetStyle(button, "INCORRECT");
                 AnchorPane parent = (AnchorPane) c3.getParent();
+                SetParentStyle(parent);
+                livesHandler();
+                scoreHandler("INCORRECT");
+            }
+        } else
+
+        if (CURRENT_QUESTION == 6) {
+            if (answer.equals(CONFIG.Q6.ANSWER)){
+                SetStyle(button, "CORRECT");
+                scoreHandler("CORRECT");
+            } else {
+                SetStyle(button, "INCORRECT");
+                AnchorPane parent = (AnchorPane) c4.getParent();
+                SetParentStyle(parent);
+                livesHandler();
+                scoreHandler("INCORRECT");
+            }
+        } else
+
+        if (CURRENT_QUESTION == 7) {
+            if (answer.equals(CONFIG.Q7.ANSWER)){
+                SetStyle(button, "CORRECT");
+                scoreHandler("CORRECT");
+            } else {
+                SetStyle(button, "INCORRECT");
+                AnchorPane parent = (AnchorPane) c1.getParent();
+                SetParentStyle(parent);
+                livesHandler();
+                scoreHandler("INCORRECT");
+            }
+        } else
+
+        if (CURRENT_QUESTION == 8) {
+            if (answer.equals(CONFIG.Q8.ANSWER)){
+                SetStyle(button, "CORRECT");
+                scoreHandler("CORRECT");
+            } else {
+                SetStyle(button, "INCORRECT");
+                AnchorPane parent = (AnchorPane) c2.getParent();
+                SetParentStyle(parent);
+                livesHandler();
+                scoreHandler("INCORRECT");
+            }
+        } else
+
+        if (CURRENT_QUESTION == 9) {
+            if (answer.equals(CONFIG.Q9.ANSWER)){
+                SetStyle(button, "CORRECT");
+                scoreHandler("CORRECT");
+            } else {
+                SetStyle(button, "INCORRECT");
+                AnchorPane parent = (AnchorPane) c2.getParent();
+                SetParentStyle(parent);
+                livesHandler();
+                scoreHandler("INCORRECT");
+            }
+        } else
+
+        if (CURRENT_QUESTION == 10) {
+            if (answer.equals(CONFIG.Q10.ANSWER)){
+                SetStyle(button, "CORRECT");
+                scoreHandler("CORRECT");
+            } else {
+                SetStyle(button, "INCORRECT");
+                AnchorPane parent = (AnchorPane) c1.getParent();
                 SetParentStyle(parent);
                 livesHandler();
                 scoreHandler("INCORRECT");
@@ -329,13 +511,12 @@ public class l1 implements Initializable{
     private void nextQuestion(Button button) {
         CURRENT_QUESTION++;
         button.setText("NEXT");
-        levelComplete(button);
     }
 
     private void levelComplete(Button button) {
         if (CURRENT_QUESTION > CONFIG.TOTAL_QUESTIONS) {
             Stage primaryStage = (Stage) button.getScene().getWindow();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(STYLE.LEVEL_COMPLETE)); 
+            FXMLLoader loader  = new FXMLLoader(getClass().getResource(STYLE.LEVEL_COMPLETE.A1_L1)); 
             try {
                 Parent root = loader.load();
                 Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
