@@ -44,8 +44,11 @@
     -yes-main       : #78a53d;
     -yes-shadow     : #475d29;
 
-    -no-main        : #863232 ;
+    -no-main        : #863232;
     -no-shadow      : #4d2929;
+
+    -submit-hover : #9bc8605d;
+    -return-hover : #c860605d;
 }
 
 /* Styles */
@@ -101,6 +104,15 @@
     -fx-border-color: -logo-green;
 }
 
+.submit:hover {
+    -fx-background-color: -submit-hover;
+}
+
 .return {
     -fx-border-color: -no-main;
 }
+
+.return:hover {
+    -fx-background-color: -return-hover;
+}
+

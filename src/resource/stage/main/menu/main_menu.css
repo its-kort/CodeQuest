@@ -120,6 +120,7 @@
     -fx-background-radius   : 5;
     -fx-pref-width          : 750;
     -fx-padding             : 10;
+    -fx-transition: 0.5s;
 }
 
 .act-title {
@@ -135,5 +136,4 @@
     -fx-text-fill   : -white;
     -fx-padding     : 0;
 }
-
 /* LEVEL */

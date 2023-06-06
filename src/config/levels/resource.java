@@ -10,23 +10,31 @@ public class resource {
     public String HOME = "/resource/stage/main/menu/main_menu.fxml";
 
 
-    public int LIVES           = 11;
+    public int LIVES           = 3;
     public int TOTAL_QUESTIONS = 10;
     public double THRESHOLD    = 0.8;
 
     public class LEVEL_COMPLETE {
         public String A1_L1 = "/resource/stage/main/levels/act-1/l1/completed.fxml";
         public String A1_L2 = "/resource/stage/main/levels/act-1/l2/completed.fxml";
+        public String A1_L3 = "/resource/stage/main/levels/act-1/l3/completed.fxml";
+        public String A1_L4 = "/resource/stage/main/levels/act-1/l4/completed.fxml";
 
     }
+    
     public class LESSON {
         public String A1_L1 = "/resource/stage/main/levels/act-1/l1/lesson.fxml";
         public String A1_L2 = "/resource/stage/main/levels/act-1/l2/lesson.fxml";
+        public String A1_L3 = "/resource/stage/main/levels/act-1/l3/lesson.fxml";
+        public String A1_L4 = "/resource/stage/main/levels/act-1/l4/lesson.fxml";
+
     }
     
     public class LEVEL {
         public String A1_L1 = "/resource/stage/main/levels/act-1/l1/l1.fxml";
         public String A1_L2 = "/resource/stage/main/levels/act-1/l2/l2.fxml";
+        public String A1_L3 = "/resource/stage/main/levels/act-1/l3/l3.fxml";
+        public String A1_L4 = "/resource/stage/main/levels/act-1/l4/l4.fxml";
     }
 
     public class STYLE {

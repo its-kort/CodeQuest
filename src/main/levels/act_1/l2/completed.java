@@ -31,7 +31,7 @@ public class completed implements Initializable {
 
     public void start() {
         SaveData data = new SaveData();
-        data.LEVEL = data.ACT_1.L2;
+        data.A1_L2 = true;
 
         try {
             ResourceManager.save(data, data.NAME);
@@ -55,7 +55,14 @@ public class completed implements Initializable {
 
     @FXML
     private void NEXT(ActionEvent event) {
-
+        try {
+            Stage primaryStage = (Stage) total_score.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource(CONFIG.LESSON.A1_L2)); 
+            Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
+            primaryStage.setScene(scene);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

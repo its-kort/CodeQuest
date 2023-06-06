@@ -31,7 +31,7 @@ public class completed implements Initializable {
 
     public void start() {
         SaveData data = new SaveData();
-        data.LEVEL = data.ACT_1.L1;
+        data.A1_L1 = true;
 
         try {
             ResourceManager.save(data, data.NAME);

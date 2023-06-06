@@ -88,7 +88,7 @@ public class l2 implements Initializable{
     private void RESTART(ActionEvent event) {
         Stage primaryStage = (Stage) exit.getScene().getWindow();
         try {
-            Parent root = FXMLLoader.load(getClass().getResource(STYLE.LEVEL.A1_L1)); 
+            Parent root = FXMLLoader.load(getClass().getResource(STYLE.LEVEL.A1_L2)); 
             Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
             primaryStage.setScene(scene);
         } catch (Exception e) {

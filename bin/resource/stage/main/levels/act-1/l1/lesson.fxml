@@ -66,6 +66,15 @@
                            <children>
                               <VBox prefHeight="200.0" prefWidth="100.0" styleClass="container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="heading" text="Introduction to Java" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
                                     <HBox layoutX="60.0" layoutY="60.0" styleClass="item">
                                        <children>
                                           <VBox>

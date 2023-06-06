@@ -50,7 +50,8 @@ public class main_menu implements Initializable{
             a1_l5.setImage(LEVEL_LOCKED);
             
 
-            if (data.LEVEL.equals(CONFIG_DATA.ACT_1.L1)) {
+            // if (data.LEVEL.equals(CONFIG_DATA.ACT_1.L1)) {
+            if (data.A1_L1 == true) {
                 start.setVisible(false);
 
                 a1_l1.setImage(LEVEL_COMPLETED);
@@ -60,7 +61,9 @@ public class main_menu implements Initializable{
 
             } else
 
-            if (data.LEVEL.equals(CONFIG_DATA.ACT_1.L2)) {
+            
+            // if (data.LEVEL.equals(CONFIG_DATA.ACT_1.L2)) {
+            if (data.A1_L2 == true) {
                 start.setVisible(false);
 
                 a1_l1.setImage(LEVEL_COMPLETED);
@@ -72,7 +75,8 @@ public class main_menu implements Initializable{
                 a1_l3.setDisable(false);
             }
             
-            if (data.LEVEL.equals(CONFIG_DATA.ACT_1.L3)) {
+            // if (data.LEVEL.equals(CONFIG_DATA.ACT_1.L3)) {
+            if (data.A1_L3 == true) {
                 start.setVisible(false);
 
                 a1_l1.setImage(LEVEL_COMPLETED);
@@ -86,7 +90,8 @@ public class main_menu implements Initializable{
                 a1_l4.setDisable(false);
             }
             
-            if (data.LEVEL.equals(CONFIG_DATA.ACT_1.L4)) {
+            // if (data.LEVEL.equals(CONFIG_DATA.ACT_1.L4)) {
+            if (data.A1_L4 == true) {
                 start.setVisible(false);
 
                 a1_l1.setImage(LEVEL_COMPLETED);
@@ -102,7 +107,8 @@ public class main_menu implements Initializable{
                 a1_l5.setDisable(false);
             }
             
-            if (data.LEVEL.equals(CONFIG_DATA.ACT_1.L5)) {
+            // if (data.LEVEL.equals(CONFIG_DATA.ACT_1.L5)) {
+            if (data.A1_L5 == true) {
                 start.setVisible(false);
                 
                 a1_l1.setImage(LEVEL_COMPLETED);
@@ -148,7 +154,6 @@ public class main_menu implements Initializable{
     @FXML
     private boolean LEVEL_2() {
         Stage primaryStage = (Stage) a1_l2.getScene().getWindow();
-        System.out.println("main_menu.LEVEL_2()");
         try {
             Parent root = FXMLLoader.load(getClass().getResource(CONFIG_IMG.LESSON.A1_L2)); 
             Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
@@ -160,6 +165,34 @@ public class main_menu implements Initializable{
         return false;
     }
 
+    @FXML
+    private boolean LEVEL_3() {
+        Stage primaryStage = (Stage) a1_l3.getScene().getWindow();
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(CONFIG_IMG.LESSON.A1_L3)); 
+            Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
+            primaryStage.setScene(scene);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+
+    @FXML
+    private boolean LEVEL_4() {
+        Stage primaryStage = (Stage) a1_l4.getScene().getWindow();
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(CONFIG_IMG.LESSON.A1_L4)); 
+            Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
+            primaryStage.setScene(scene);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+    
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         loadData();

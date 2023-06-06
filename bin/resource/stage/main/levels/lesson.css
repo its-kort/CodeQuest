@@ -40,6 +40,9 @@
     -key-main   : #3C298F;
     -key-shadow : #251957;
 
+    -submit-hover : #9bc8605d;
+    -return-hover : #c860605d;
+
     -bg-exit    : #863232;
 }
 
@@ -102,14 +105,21 @@
     -fx-font-size           : 20;
     -fx-padding             : 10;
     -fx-effect              : dropshadow(gaussian, -key-shadow, 0, 0, 0, 10);
-    -fx-pref-width          : 200;
+    -fx-pref-width          : 290;
 }
 
 .key {
     -fx-font-family         : "Helios Antique Medium";
 }
+
 .key-code {
     -fx-font-family         : "Monaco";
+}
+
+.heading {
+    -fx-font-family         : "Helios Antique Black";
+    -fx-font-size           : 40;
+    -fx-text-fill           : -white;
 }
 
 .definition {
@@ -146,6 +156,14 @@
     -fx-border-color: -logo-green;
 }
 
+.start:hover {
+    -fx-background-color: -submit-hover;
+}
+
 .return {
     -fx-border-color: -bg-exit;
+}
+
+.return:hover {
+    -fx-background-color: -return-hover;
 }

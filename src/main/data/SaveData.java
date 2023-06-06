@@ -4,7 +4,13 @@ import java.io.Serializable;
 
 public class SaveData implements Serializable {
     public static final long version = 1L;
-    public String LEVEL;
+    // public String LEVEL;
+    public boolean A1_L1;
+    public boolean A1_L2;
+    public boolean A1_L3;
+    public boolean A1_L4;
+    public boolean A1_L5;
+
     
     public class ACT_1 implements Serializable {
         public String L1 = "a1_l1";

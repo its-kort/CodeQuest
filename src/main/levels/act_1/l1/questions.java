@@ -68,7 +68,7 @@ public class questions {
         public String CHOICE_1 = "main";
         public String CHOICE_2 = "class";
         public String CHOICE_3 = "public";
-        public String CHOICE_4 = "None of the choices";
+        public String CHOICE_4 = "None of the options";
         public String ANSWER = CHOICE_1;
     }
 
@@ -88,7 +88,7 @@ public class questions {
         public String CHOICE_1 = "Symbols";
         public String CHOICE_2 = "Digits";
         public String CHOICE_3 = "Characters";
-        public String CHOICE_4 = "None of the choices";
+        public String CHOICE_4 = "None of the options";
         public String ANSWER = CHOICE_2;
     }
 

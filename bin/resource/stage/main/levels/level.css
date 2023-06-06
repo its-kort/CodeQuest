@@ -41,7 +41,12 @@
 
     -choice-main    : #414145;
     -choice-shadow  : #303034;
+
+    -choice-main-hover : #717179;
+    -choice-shadow-hover : #4c4c52;
      
+    -submit-hover : #9bc8605d;
+
     -bg-exit        : #863232;
 
     -bg-shop        : #3C298F;
@@ -160,6 +165,11 @@
     -fx-font-size           : 20;
 }
 
+.choice-container:hover {
+    -fx-background-color    : -choice-main-hover;
+    -fx-effect              : dropshadow(gaussian, -choice-shadow-hover, 0, 0, 0, 10);
+}
+
 
 .bottom {
     -fx-border-width: 1 0 0 0;
@@ -188,6 +198,10 @@
     -fx-text-fill       : -bg-white;
     -fx-padding         : 10;
     -fx-pref-width      : 200;
+}
+
+.submit:hover {
+    -fx-background-color: -submit-hover;
 }
 
 .popup-container {
