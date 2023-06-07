@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3500.0" prefWidth="2000.0" stylesheets="@../../lesson.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.levels.act_1.l5.lesson">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="9000.0" prefWidth="2000.0" stylesheets="@../../lesson.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.levels.act_1.l5.lesson">
    <children>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -78,6 +78,797 @@
                                     </HBox>
                                     <HBox layoutX="60.0" layoutY="60.0" styleClass="item">
                                        <children>
+                                          <Label minHeight="-Infinity" styleClass="heading" text="Introduction to Java" wrapText="true" />
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Java" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A class-based, object-oriented programming language based on C and C++. It is a high-level language that is easy to read and understand." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="James Gosling" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="The creator of the Java programming language. He had only one goal in creating the programming language — “Write once, run anywhere.” " wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Byte" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A numeric data type which occupies 8 bits and holds integer values from -128 to 127." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Compiler" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A program that transforms a written programming language into a code that can be understood by the computer’s processor." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Variable" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A programmer-assigned name for a specific address, which holds data, in the computer’s memory." wrapText="true" />
+                                                <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text="&#10;Example:" wrapText="true">
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="MyVariable = 10;&#10;&#10;System.out.println(MyVariable);&#10;&#10;OUTPUT:&#10;10" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </VBox>
+                                                <VBox>
+                                                   <children>
+                                                      <TextFlow maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="In the above code block, &#10;" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="MyVariable&#10;" wrapText="true" />
+                                                            <Label layoutX="271.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text=" is the variable. &#10;" wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox minHeight="-Infinity">
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" styleClass="key" text="Data" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Information that is stored digitally." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" styleClass="key" text="Identifier" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A unique name that identifies an element in a program. Identifiers start with either an alphabet or an underscore (_). In identifiers, both uppercase and lowercase letters are distinct." wrapText="true" />
+                                                <Label minHeight="-Infinity" styleClass="definition" text="&#10;Example:" wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="public class MyIdentifier {&#10;&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </VBox>
+                                                <VBox>
+                                                   <children>
+                                                      <TextFlow maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="In the code block above, &#10;" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="MyIdentifier" wrapText="true" />
+                                                            <Label layoutX="271.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text=" is the identifier. &#10;" wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="heading" text="Types of Data" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="short" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A numeric data type which occupies 16 bits and holds values from -32768 to 32767." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="short year = 2015;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="int" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A numeric data type which occupies 32 bits." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="int population = 1354040000;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="long" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A numeric data type which occupies 64 bits." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="long bigNumber = 2L;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="float" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A numeric data type which occupies 32 bits and holds single precision floating point numbers." wrapText="true" />
+                                                <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label layoutX="-1.0" minHeight="-Infinity" styleClass="example" text="float price = 5.75f;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="double" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A numeric data type which occupies 64 bits and holds double precision floating point numbers. " wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="double pi = 3.1415926535897931159d;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox minHeight="-Infinity">
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" styleClass="key-code" text="boolean" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text=" A data type which holds a value of either true or false." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="boolean married = true;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" styleClass="key-code" text="char" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A 16-bit Unicode character which holds values from 0 to 65,535 or a single character. This is usually surrounded by single quotations (')." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="char grade = 'A';" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="15.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" styleClass="key-code" text="string" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A sequence of numbers or characters. It may contain alphabetic, numeric, special characters, or combination of characters. Strings are meant to hold text and not for numeric computations. This is usually surrounded by double quotations (&quot;)." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="name = &quot;St. Therese of the Child Jesus Academy&quot;;&#10;address = &quot;22 Adante St., Tañong, Malabon City&quot;;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="15.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="heading" text="Operators" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Operator" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A symbol which represents a specific operation." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="x = y;&#10;x + y;&#10;x - y;&#10;x * y;&#10;x / y;&#10;x % y;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                                <TextFlow>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                   <children>
+                                                      <Label minHeight="-Infinity" styleClass="definition" text="The operator in this code block are the symbols between the two variables." wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Operand" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="The data that will be manipulated by the operator." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="int totalPrice = quantity * unitPrice;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <TextFlow>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="In the code above, the operands are " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="quantity" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" and " wrapText="true" />
+                                                            <Label layoutX="395.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="unitPrice" wrapText="true" />
+                                                            <Label layoutX="502.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="heading" text="Types of Operators" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Assignment ( = )" wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Assigns the value of the right operand to the left operand." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="int value = 10;&#10;System.out.println(value);" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                                <TextFlow>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                   <children>
+                                                      <Label minHeight="-Infinity" styleClass="definition" text="The operation above would result into " wrapText="true" />
+                                                      <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="10" wrapText="true" />
+                                                      <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Addition ( + )" wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Adds the left and right-hand side operands and returns the resulting sum." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="int sum = 1 +  3;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                                <TextFlow>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                   <children>
+                                                      <Label minHeight="-Infinity" styleClass="definition" text="The operation above would result into " wrapText="true" />
+                                                      <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="4" wrapText="true" />
+                                                      <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Subtraction ( - )" wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Subtracts the left and right-hand side operands and returns the resulting difference." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="int difference = 10 - 7;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <TextFlow>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="The operation above would result into " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="3" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Multiplication ( * )" wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Multiplies the left and right-hand side operands and returns the resulting product." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="int product = 3 * 2;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <TextFlow>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="The operation above would result into " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="6" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Division ( / )" wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Divides the left and right-hand side operands and returns the resulting quotient." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label layoutY="2.0" minHeight="-Infinity" styleClass="example" text="int quotient = 8 / 4;" wrapText="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <TextFlow>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="The operation above would result into " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="2" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Modulo ( % )" wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Returns the remainder of a division when the left operand is divded by the right operand." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label layoutY="2.0" minHeight="-Infinity" styleClass="example" text="int remainder = 10 % 6;" wrapText="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <TextFlow>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="The operation above would result into " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="4" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Increment ( ++ )" wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Increases the operand  by one." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label layoutY="2.0" minHeight="-Infinity" styleClass="example" text="int x = 3;&#10;x++;" wrapText="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <TextFlow>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="The operation above would result into " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="4" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Decrement ( -- )" wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Decreases the operand  by one." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label layoutY="2.0" minHeight="-Infinity" styleClass="example" text="int x = 3;&#10;x--;" wrapText="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <TextFlow>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="The operation above would result into " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="2" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="15.0" />
+                                                         </VBox.margin>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="heading" text="Relational Operator" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox styleClass="item">
+                                       <children>
                                           <VBox>
                                              <children>
                                                 <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Relational Operator" wrapText="true" />
@@ -110,7 +901,7 @@
                                           </VBox>
                                        </children>
                                     </HBox>
-                                    <HBox layoutX="60.0" layoutY="60.0" styleClass="item">
+                                    <HBox styleClass="item">
                                        <children>
                                           <VBox>
                                              <children>
@@ -148,7 +939,7 @@
                                           </VBox>
                                        </children>
                                     </HBox>
-                                    <HBox layoutX="60.0" layoutY="60.0" styleClass="item">
+                                    <HBox styleClass="item">
                                        <children>
                                           <VBox>
                                              <children>
@@ -190,7 +981,7 @@
                                           </VBox>
                                        </children>
                                     </HBox>
-                                    <HBox layoutX="60.0" layoutY="841.0" styleClass="item">
+                                    <HBox styleClass="item">
                                        <children>
                                           <VBox>
                                              <children>
@@ -228,7 +1019,7 @@
                                           </VBox>
                                        </children>
                                     </HBox>
-                                    <HBox layoutX="60.0" layoutY="841.0" styleClass="item">
+                                    <HBox styleClass="item">
                                        <children>
                                           <VBox>
                                              <children>
@@ -266,7 +1057,7 @@
                                           </VBox>
                                        </children>
                                     </HBox>
-                                    <HBox layoutX="60.0" layoutY="996.0" styleClass="item">
+                                    <HBox styleClass="item">
                                        <children>
                                           <VBox>
                                              <children>
@@ -304,7 +1095,7 @@
                                           </VBox>
                                        </children>
                                     </HBox>
-                                    <HBox layoutX="60.0" layoutY="1151.0" styleClass="item">
+                                    <HBox styleClass="item">
                                        <children>
                                           <VBox>
                                              <children>
@@ -342,7 +1133,7 @@
                                           </VBox>
                                        </children>
                                     </HBox>
-                                    <HBox layoutX="60.0" layoutY="60.0" styleClass="item">
+                                    <HBox styleClass="item">
                                        <children>
                                           <VBox>
                                              <children>
@@ -351,7 +1142,7 @@
                                           </VBox>
                                        </children>
                                     </HBox>
-                                    <HBox layoutX="60.0" layoutY="2001.0" styleClass="item">
+                                    <HBox styleClass="item">
                                        <children>
                                           <VBox>
                                              <children>
@@ -391,7 +1182,7 @@
                                           </VBox>
                                        </children>
                                     </HBox>
-                                    <HBox layoutX="60.0" layoutY="2443.0" styleClass="item">
+                                    <HBox styleClass="item">
                                        <children>
                                           <VBox>
                                              <children>
@@ -434,7 +1225,7 @@
                                     </HBox>
                                  </children>
                                  <padding>
-                                    <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                                    <Insets bottom="100.0" left="50.0" right="50.0" top="50.0" />
                                  </padding>
                               </VBox>
                            </children>

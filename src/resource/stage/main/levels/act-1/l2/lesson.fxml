@@ -260,7 +260,7 @@
                                        <children>
                                           <VBox>
                                              <children>
-                                                <Label alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" styleClass="key-code" text="string" wrapText="true" />
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" styleClass="key-code" text="String" wrapText="true" />
                                              </children>
                                           </VBox>
                                           <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
@@ -270,7 +270,7 @@
                                                    <children>
                                                       <AnchorPane>
                                                          <children>
-                                                            <Label minHeight="-Infinity" styleClass="example" text="name = &quot;St. Therese of the Child Jesus Academy&quot;;&#10;address = &quot;22 Adante St., Tañong, Malabon City&quot;;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                            <Label minHeight="-Infinity" styleClass="example" text="String name = &quot;St. Therese of the Child Jesus Academy&quot;;&#10;String address = &quot;22 Adante St., Tañong, Malabon City&quot;;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                                          </children>
                                                       </AnchorPane>
                                                    </children>

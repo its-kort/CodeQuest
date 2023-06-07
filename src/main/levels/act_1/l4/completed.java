@@ -55,7 +55,14 @@ public class completed implements Initializable {
 
     @FXML
     private void NEXT(ActionEvent event) {
-
+        try {
+            Stage primaryStage = (Stage) total_score.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource(CONFIG.LESSON.A1_L5)); 
+            Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
+            primaryStage.setScene(scene);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

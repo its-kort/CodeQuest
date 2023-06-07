@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2500.0" prefWidth="1500.0" stylesheets="@../../lesson.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.levels.act_2.l1.lesson">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="75.0" prefWidth="200.0" styleClass="top" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <left>
+                        <Label styleClass="overview" text="LESSON OVERVIEW" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <ImageView fitHeight="40.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../../../../../media/logo/CodeQuest_Logo.png" />
+                           </image>
+                        </ImageView>
+                     </right>
+                  </BorderPane>
+               </children>
+               <padding>
+                  <Insets left="50.0" right="50.0" />
+               </padding>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="100.0" prefWidth="200.0" styleClass="bottom" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="exit" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#RETURN" styleClass="return" text="RETURN">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="start" layoutX="462.0" layoutY="37.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#START" styleClass="start" text="START LEVEL">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </HBox>
+               </children></AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" styleClass="container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="heading" text="Program Flow Control" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="60.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="if statement" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Executes a statement if the specified condition is true." wrapText="true" />
+                                                <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text="&#10;Example:" wrapText="true">
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin></Label>
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="if (grade &gt;= 90 &amp;&amp; grade &lt; 95) {&#10;    System.out.println(&quot;With Honors&quot;);&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </VBox>
+                                                <VBox>
+                                                   <children>
+                                                      <TextFlow maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="In the code above, the system will print &#10;" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="&quot;With Honors&quot;" wrapText="true" />
+                                                            <Label layoutX="271.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text=" if " wrapText="true" />
+                                                            <Label layoutX="428.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="grade" wrapText="true" />
+                                                            <Label layoutX="589.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" is greater than 90 and less than 95." wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="185.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="if-else statement" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Executes a statement if the specified condition is true, or another statement or block if the condition is false." wrapText="true" />
+                                                <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text="&#10;Example:" wrapText="true">
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="if (grade &gt;= 75) {&#10;    System.out.println(&quot;Passed&quot;);&#10;} else {&#10;    Syste.out.println(&quot;Failed&quot;);&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </VBox>
+                                                <VBox>
+                                                   <children>
+                                                      <TextFlow maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="In the code above, the system will print &#10;" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="&quot;Passed&quot;" wrapText="true" />
+                                                            <Label layoutX="271.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text=" if " wrapText="true" />
+                                                            <Label layoutX="428.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="grade" wrapText="true" />
+                                                            <Label layoutX="589.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" is greater than or equal to 75." wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                      <TextFlow layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="Otherwise, the system will print " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="&quot;Failed&quot;" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="895.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="if-else-if statement" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Executes a statement of the specified condition is true. If it is false, it tests another condition or executes another statement if the other condition is true." wrapText="true" />
+                                                <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text="&#10;Example:" wrapText="true">
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="if (grade &gt;= 75) {&#10;    System.out.println(&quot;Passed&quot;);&#10;} else if (grade &lt; 75) {&#10;    System.out.println(&quot;Failed&quot;);&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </VBox>
+                                                <VBox>
+                                                   <children>
+                                                      <TextFlow maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="In the code above, the system will print &#10;" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="&quot;Passed&quot;" wrapText="true" />
+                                                            <Label layoutX="271.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text=" if " wrapText="true" />
+                                                            <Label layoutX="428.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="grade" wrapText="true" />
+                                                            <Label layoutX="589.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" is greater than or equal to 75." wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                      <TextFlow layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="Otherwise, if " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="grade" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" is less than 75, the system will print " wrapText="true" />
+                                                            <Label layoutX="149.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="&quot;Failed&quot;" wrapText="true" />
+                                                            <Label layoutX="223.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="185.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="switch statement" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Executes a variable or expression, then continues execution to the case stament with the value equal to the value of the variable. If no case statement has an equal value, execution continues to the default statement, if there is one." wrapText="true" />
+                                                <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text="&#10;Example:" wrapText="true">
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="int num = 2;&#10;&#10;switch (num) {&#10;   case 1:&#10;     System.out.println(&quot;One.&quot;);&#10;     break;&#10;&#10;   case 2:&#10;     System.out.println(&quot;Two.&quot;);&#10;     break;&#10;&#10;   default:&#10;     System.out.println(&quot;Undefined&quot;);&#10;     break;&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </VBox>
+                                                <VBox>
+                                                   <children>
+                                                      <TextFlow maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="In the code l block above, the switch statement will execute the expression through each case until" wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                      <TextFlow layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="it matches with the value of variable " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="num" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=". In this case, the output of the code will be " wrapText="true" />
+                                                            <Label layoutX="403.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="&quot;Two&quot;" wrapText="true" />
+                                                            <Label layoutX="455.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="150.0" left="50.0" right="50.0" top="50.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

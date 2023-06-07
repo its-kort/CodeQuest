@@ -11,6 +11,12 @@ public class SaveData implements Serializable {
     public boolean A1_L4;
     public boolean A1_L5;
 
+    public boolean A2_L1;
+    public boolean A2_L2;
+    public boolean A2_L3;
+    public boolean A2_L4;
+    public boolean A2_L5;
+
     
     public class ACT_1 implements Serializable {
         public String L1 = "a1_l1";

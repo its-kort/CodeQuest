@@ -14,6 +14,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
@@ -23,6 +24,7 @@ import javafx.stage.Stage;
 public class l4 implements Initializable{
     @FXML private Label       question;
     @FXML private Label       example;
+    @FXML private ScrollPane  CodeBlock;
     @FXML private Button      c1;
     @FXML private Button      c2;
     @FXML private Button      c3;
@@ -109,7 +111,8 @@ public class l4 implements Initializable{
         c4.setDisable(false);
         example.setManaged(false);
         example.setVisible(false);
-
+        CodeBlock.setManaged(false);
+        CodeBlock.setVisible(false);
 
 
         if (CURRENT_QUESTION == 1) {
@@ -118,6 +121,8 @@ public class l4 implements Initializable{
             if(CONFIG.Q1.EXAMPLE != null) {
                 example.setManaged(!example.isManaged());
                 example.setVisible(!example.isVisible());
+                CodeBlock.setManaged(!CodeBlock.isManaged());
+                CodeBlock.setVisible(!CodeBlock.isVisible());
                 example.setText(CONFIG.Q1.EXAMPLE);
             }
 
@@ -133,6 +138,8 @@ public class l4 implements Initializable{
             if(CONFIG.Q2.EXAMPLE != null) {
                 example.setManaged(!example.isManaged());
                 example.setVisible(!example.isVisible());
+                CodeBlock.setManaged(!CodeBlock.isManaged());
+                CodeBlock.setVisible(!CodeBlock.isVisible());
                 example.setText(CONFIG.Q2.EXAMPLE);
             }
             c1.setText(CONFIG.Q2.CHOICE_1);
@@ -147,6 +154,8 @@ public class l4 implements Initializable{
             if(CONFIG.Q3.EXAMPLE != null) {
                 example.setManaged(!example.isManaged());
                 example.setVisible(!example.isVisible());
+                CodeBlock.setManaged(!CodeBlock.isManaged());
+                CodeBlock.setVisible(!CodeBlock.isVisible());
                 example.setText(CONFIG.Q3.EXAMPLE);
             }
 
@@ -162,6 +171,8 @@ public class l4 implements Initializable{
             if(CONFIG.Q4.EXAMPLE != null) {
                 example.setManaged(!example.isManaged());
                 example.setVisible(!example.isVisible());
+                CodeBlock.setManaged(!CodeBlock.isManaged());
+                CodeBlock.setVisible(!CodeBlock.isVisible());
                 example.setText(CONFIG.Q4.EXAMPLE);
             }
 
@@ -177,6 +188,8 @@ public class l4 implements Initializable{
             if(CONFIG.Q5.EXAMPLE != null) {
                 example.setManaged(!example.isManaged());
                 example.setVisible(!example.isVisible());
+                CodeBlock.setManaged(!CodeBlock.isManaged());
+                CodeBlock.setVisible(!CodeBlock.isVisible());
                 example.setText(CONFIG.Q5.EXAMPLE);
             }
 
@@ -192,6 +205,8 @@ public class l4 implements Initializable{
             if(CONFIG.Q6.EXAMPLE != null) {
                 example.setManaged(!example.isManaged());
                 example.setVisible(!example.isVisible());
+                CodeBlock.setManaged(!CodeBlock.isManaged());
+                CodeBlock.setVisible(!CodeBlock.isVisible());
                 example.setText(CONFIG.Q6.EXAMPLE);
             }
 
@@ -207,6 +222,8 @@ public class l4 implements Initializable{
             if(CONFIG.Q7.EXAMPLE != null) {
                 example.setManaged(!example.isManaged());
                 example.setVisible(!example.isVisible());
+                CodeBlock.setManaged(!CodeBlock.isManaged());
+                CodeBlock.setVisible(!CodeBlock.isVisible());
                 example.setText(CONFIG.Q7.EXAMPLE);
             }
 
@@ -222,6 +239,8 @@ public class l4 implements Initializable{
             if(CONFIG.Q8.EXAMPLE != null) {
                 example.setManaged(!example.isManaged());
                 example.setVisible(!example.isVisible());
+                CodeBlock.setManaged(!CodeBlock.isManaged());
+                CodeBlock.setVisible(!CodeBlock.isVisible());
                 example.setText(CONFIG.Q8.EXAMPLE);
             }
 
@@ -237,6 +256,8 @@ public class l4 implements Initializable{
             if(CONFIG.Q9.EXAMPLE != null) {
                 example.setManaged(!example.isManaged());
                 example.setVisible(!example.isVisible());
+                CodeBlock.setManaged(!CodeBlock.isManaged());
+                CodeBlock.setVisible(!CodeBlock.isVisible());
                 example.setText(CONFIG.Q9.EXAMPLE);
             }
 
@@ -252,6 +273,8 @@ public class l4 implements Initializable{
             if(CONFIG.Q10.EXAMPLE != null) {
                 example.setManaged(!example.isManaged());
                 example.setVisible(!example.isVisible());
+                CodeBlock.setManaged(!CodeBlock.isManaged());
+                CodeBlock.setVisible(!CodeBlock.isVisible());
                 example.setText(CONFIG.Q10.EXAMPLE);
             }
 

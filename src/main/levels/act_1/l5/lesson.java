@@ -23,7 +23,7 @@ public class lesson {
     private void START() {
         try {
             Stage primaryStage = (Stage) start.getScene().getWindow();
-            Parent root = FXMLLoader.load(getClass().getResource(CONFIG.LEVEL.A1_L4)); 
+            Parent root = FXMLLoader.load(getClass().getResource(CONFIG.LEVEL.A1_L5)); 
             Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
             primaryStage.setScene(scene);
         } catch (Exception e) {
