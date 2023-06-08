@@ -250,7 +250,7 @@
                                                    <children>
                                                       <TextFlow maxWidth="-Infinity" minWidth="-Infinity">
                                                          <children>
-                                                            <Label minHeight="-Infinity" styleClass="definition" text="In the code l block above, the switch statement will execute the expression through each case until" wrapText="true" />
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="In the code block above, the switch statement will execute the expression through each case until" wrapText="true" />
                                                          </children>
                                                       </TextFlow>
                                                       <TextFlow layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" minWidth="-Infinity">
