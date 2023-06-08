@@ -31,6 +31,12 @@ public class completed implements Initializable {
 
     public void start() {
         SaveData data = new SaveData();
+        try {
+            data = (SaveData) ResourceManager.load(data.NAME);
+        } catch (Exception e) {
+            System.out.println("Could not save data: " + e.getMessage());
+        }
+        
         data.A1_L1 = true;
 
         try {

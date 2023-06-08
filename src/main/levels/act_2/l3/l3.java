@@ -378,7 +378,7 @@ public class l3 implements Initializable{
                 scoreHandler("CORRECT");
             } else {
                 SetStyle(button, "INCORRECT");
-                AnchorPane parent = (AnchorPane) c3.getParent();
+                AnchorPane parent = (AnchorPane) c2.getParent();
                 SetParentStyle(parent);
                 livesHandler();
                 scoreHandler("INCORRECT");
@@ -391,7 +391,7 @@ public class l3 implements Initializable{
                 scoreHandler("CORRECT");
             } else {
                 SetStyle(button, "INCORRECT");
-                AnchorPane parent = (AnchorPane) c1.getParent();
+                AnchorPane parent = (AnchorPane) c3.getParent();
                 SetParentStyle(parent);
                 livesHandler();
                 scoreHandler("INCORRECT");
@@ -404,7 +404,7 @@ public class l3 implements Initializable{
                 scoreHandler("CORRECT");
             } else {
                 SetStyle(button, "INCORRECT");
-                AnchorPane parent = (AnchorPane) c2.getParent();
+                AnchorPane parent = (AnchorPane) c3.getParent();
                 SetParentStyle(parent);
                 livesHandler();
                 scoreHandler("INCORRECT");
@@ -417,7 +417,7 @@ public class l3 implements Initializable{
                 scoreHandler("CORRECT");
             } else {
                 SetStyle(button, "INCORRECT");
-                AnchorPane parent = (AnchorPane) c4.getParent();
+                AnchorPane parent = (AnchorPane) c2.getParent();
                 SetParentStyle(parent);
                 livesHandler();
                 scoreHandler("INCORRECT");
@@ -430,7 +430,7 @@ public class l3 implements Initializable{
                 scoreHandler("CORRECT");
             } else {
                 SetStyle(button, "INCORRECT");
-                AnchorPane parent = (AnchorPane) c3.getParent();
+                AnchorPane parent = (AnchorPane) c1.getParent();
                 SetParentStyle(parent);
                 livesHandler();
                 scoreHandler("INCORRECT");
@@ -495,7 +495,7 @@ public class l3 implements Initializable{
                 scoreHandler("CORRECT");
             } else {
                 SetStyle(button, "INCORRECT");
-                AnchorPane parent = (AnchorPane) c1.getParent();
+                AnchorPane parent = (AnchorPane) c3.getParent();
                 SetParentStyle(parent);
                 livesHandler();
                 scoreHandler("INCORRECT");

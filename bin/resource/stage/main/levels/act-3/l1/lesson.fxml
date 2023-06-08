@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2500.0" prefWidth="1500.0" stylesheets="@../../lesson.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.levels.act_3.l1.lesson">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="75.0" prefWidth="200.0" styleClass="top" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <left>
+                        <Label styleClass="overview" text="LESSON OVERVIEW" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <ImageView fitHeight="40.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../../../../../media/logo/CodeQuest_Logo.png" />
+                           </image>
+                        </ImageView>
+                     </right>
+                  </BorderPane>
+               </children>
+               <padding>
+                  <Insets left="50.0" right="50.0" />
+               </padding>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="100.0" prefWidth="200.0" styleClass="bottom" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="exit" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#RETURN" styleClass="return" text="RETURN">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="start" layoutX="462.0" layoutY="37.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#START" styleClass="start" text="START LEVEL">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </HBox>
+               </children></AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" styleClass="container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="heading" text="Object-Oriented Programming" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="60.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Object-Oriented Programming" textAlignment="CENTER" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="This is a programming language model based on objects instead of &quot;actions&quot; and data instead of logic." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="185.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Inheritance" textAlignment="CENTER" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Label minHeight="-Infinity" styleClass="definition" text="It allows classes to inherit properties and behaviors from other classes. In Java, inheritance is" wrapText="true" />
+                                                      <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text="implemented using the " wrapText="true" />
+                                                      <Label layoutX="10.0" layoutY="35.0" minHeight="-Infinity" styleClass="example" text="extends" wrapText="true" />
+                                                      <Label layoutX="10.0" layoutY="45.0" minHeight="-Infinity" styleClass="definition" text=" keyword." wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="325.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Polymorphism" textAlignment="CENTER" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="This allows objects of different classes to be treated as objects of a common superclass. It enables methods to be invoked on objects without knowing their specific types, resulting in code that is more flexible and reusable." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="465.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Attribute" textAlignment="CENTER" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Label minHeight="-Infinity" styleClass="definition" text="These are variables within a class that can be accessed by creating an object of the class and" wrapText="true" />
+                                                      <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text="using the dot syntax (" wrapText="true" />
+                                                      <Label layoutX="10.0" layoutY="35.0" minHeight="-Infinity" styleClass="example" text="." wrapText="true" />
+                                                      <Label layoutX="272.0" layoutY="35.0" minHeight="-Infinity" styleClass="definition" text=")." wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="public class Main {&#10;   int x = 5;&#10;    &#10;   public static void main(String[] args) {&#10;      Main myObject = new Main();&#10;      System.out.println(myObject.x);  &#10;  }&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                                <VBox>
+                                                   <children>
+                                                      <TextFlow maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="In the code above, the system will print 5.&#10;" wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="611.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Method" textAlignment="CENTER" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="It is also known as a function. A method is a block of code that only runs when it is called." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="public class Main {&#10;   static void myMethod() {&#10;      System.out.println(&quot;Hello world!&quot;);&#10;   }&#10;&#10;   public static void main(String[] args) {&#10;      myMethod();&#10;   }&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                                <VBox>
+                                                   <children>
+                                                      <TextFlow maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="The method in the code above is &#10;" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="myMethod()" wrapText="true" />
+                                                            <Label layoutX="271.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text=" and it is called inside the " wrapText="true" />
+                                                            <Label layoutX="360.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="main()" wrapText="true" />
+                                                            <Label layoutX="489.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" method. And the" wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                      <TextFlow layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="code will print " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="&quot;Hello world!&quot;" wrapText="true" />
+                                                            <Label layoutX="271.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="1019.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Parameter" textAlignment="CENTER" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="These are information passed to a method and acts as variables inside the method. They are specified after the method name, inside the parameters, and separated with a comma if there are more than one parameter." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="public class Main {&#10;   static void sum(int num1, int num2) {&#10;      int sum = num1 + num2;&#10;      System.out.println(sum);&#10;   }&#10;&#10;   public static void main(String[] args) {&#10;      myMethod(2, 3);&#10;   }&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                                <VBox>
+                                                   <children>
+                                                      <TextFlow maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="When a parameter is passed to the method, it is called an argument. In the code above, " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="num1" wrapText="true" />
+                                                            <Label layoutX="271.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text=" and" wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                      <TextFlow layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="num2" wrapText="true" />
+                                                            <Label minHeight="-Infinity" styleClass="definition" text=" are the parameters, while " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="1" wrapText="true" />
+                                                            <Label layoutX="271.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text=" and " wrapText="true" />
+                                                            <Label layoutX="354.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="2" wrapText="true" />
+                                                            <Label layoutX="385.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" are the arguments." wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="150.0" left="50.0" right="50.0" top="50.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -20,6 +20,7 @@ import main.data.SaveData;
 public class main_menu implements Initializable{
     @FXML private ImageView start;
     @FXML private ImageView start2;
+    @FXML private ImageView start3;
 
     @FXML private ImageView a1_l1;
     @FXML private ImageView a1_l2;
@@ -32,6 +33,10 @@ public class main_menu implements Initializable{
     @FXML private ImageView a2_l3;
     @FXML private ImageView a2_l4;
     @FXML private ImageView a2_l5;
+
+    @FXML private ImageView a3_l1;
+    @FXML private ImageView a3_l2;
+    @FXML private ImageView a3_l3;
     
     Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
 
@@ -45,6 +50,7 @@ public class main_menu implements Initializable{
 
     public void loadData() {
         start2.setVisible(false);
+        start3.setVisible(false);
 
         a1_l2.setDisable(true);
         a1_l3.setDisable(true);
@@ -56,6 +62,10 @@ public class main_menu implements Initializable{
         a2_l3.setDisable(true);
         a2_l4.setDisable(true);
         a2_l5.setDisable(true);
+
+        a3_l1.setDisable(true);
+        a3_l2.setDisable(true);
+        a3_l3.setDisable(true);
 
         try {
             SaveData data = (SaveData) ResourceManager.load(CONFIG_DATA.NAME);
@@ -71,6 +81,9 @@ public class main_menu implements Initializable{
             a2_l4.setImage(LEVEL_LOCKED);
             a2_l5.setImage(LEVEL_LOCKED);
             
+            a3_l1.setImage(LEVEL_LOCKED);
+            a3_l2.setImage(LEVEL_LOCKED);
+            a3_l3.setImage(LEVEL_LOCKED);
 
             // if (data.LEVEL.equals(CONFIG_DATA.ACT_1.L1)) {
             if (data.A1_L1 == true) {
@@ -81,7 +94,7 @@ public class main_menu implements Initializable{
 
                 a1_l2.setDisable(false);
 
-            } else
+            }
 
             
             // if (data.LEVEL.equals(CONFIG_DATA.ACT_1.L2)) {
@@ -256,6 +269,7 @@ public class main_menu implements Initializable{
             }
 
             if (data.A2_L5 == true) {
+                start3.setVisible(true);
                 start2.setVisible(false);
                 start.setVisible(false);
                 
@@ -281,7 +295,123 @@ public class main_menu implements Initializable{
                 a2_l3.setDisable(false);
                 a2_l4.setDisable(false);
                 a2_l5.setDisable(false);
+
+                a3_l1.setImage(LEVEL_UNLOCKED);
+
+                a3_l1.setDisable(false);
             }
+
+            if (data.A3_L1 == true) {
+                start3.setVisible(false);
+                start2.setVisible(false);
+                start.setVisible(false);
+                
+                a1_l1.setImage(LEVEL_COMPLETED);
+                a1_l2.setImage(LEVEL_COMPLETED);
+                a1_l3.setImage(LEVEL_COMPLETED);
+                a1_l4.setImage(LEVEL_COMPLETED);
+                a1_l5.setImage(LEVEL_COMPLETED);
+
+                a1_l2.setDisable(false);
+                a1_l3.setDisable(false);
+                a1_l4.setDisable(false);
+                a1_l5.setDisable(false);
+
+                a2_l1.setImage(LEVEL_COMPLETED);
+                a2_l2.setImage(LEVEL_COMPLETED);
+                a2_l3.setImage(LEVEL_COMPLETED);
+                a2_l4.setImage(LEVEL_COMPLETED);
+                a2_l5.setImage(LEVEL_COMPLETED);
+
+                a2_l1.setDisable(false);
+                a2_l2.setDisable(false);
+                a2_l3.setDisable(false);
+                a2_l4.setDisable(false);
+                a2_l5.setDisable(false);
+
+                a3_l1.setImage(LEVEL_COMPLETED);
+                a3_l2.setImage(LEVEL_UNLOCKED);
+
+                a3_l1.setDisable(false);
+                a3_l2.setDisable(false);
+            }
+            
+            if (data.A3_L2 == true) {
+                start3.setVisible(false);
+                start2.setVisible(false);
+                start.setVisible(false);
+                
+                a1_l1.setImage(LEVEL_COMPLETED);
+                a1_l2.setImage(LEVEL_COMPLETED);
+                a1_l3.setImage(LEVEL_COMPLETED);
+                a1_l4.setImage(LEVEL_COMPLETED);
+                a1_l5.setImage(LEVEL_COMPLETED);
+
+                a1_l2.setDisable(false);
+                a1_l3.setDisable(false);
+                a1_l4.setDisable(false);
+                a1_l5.setDisable(false);
+
+                a2_l1.setImage(LEVEL_COMPLETED);
+                a2_l2.setImage(LEVEL_COMPLETED);
+                a2_l3.setImage(LEVEL_COMPLETED);
+                a2_l4.setImage(LEVEL_COMPLETED);
+                a2_l5.setImage(LEVEL_COMPLETED);
+
+                a2_l1.setDisable(false);
+                a2_l2.setDisable(false);
+                a2_l3.setDisable(false);
+                a2_l4.setDisable(false);
+                a2_l5.setDisable(false);
+
+                a3_l1.setImage(LEVEL_COMPLETED);
+                a3_l2.setImage(LEVEL_COMPLETED);
+                
+                a3_l3.setImage(LEVEL_UNLOCKED);
+
+                a3_l1.setDisable(false);
+                a3_l2.setDisable(false);
+                a3_l3.setDisable(false);
+            }
+
+            if (data.A3_L3 == true) {
+                start3.setVisible(false);
+                start2.setVisible(false);
+                start.setVisible(false);
+                
+                a1_l1.setImage(LEVEL_COMPLETED);
+                a1_l2.setImage(LEVEL_COMPLETED);
+                a1_l3.setImage(LEVEL_COMPLETED);
+                a1_l4.setImage(LEVEL_COMPLETED);
+                a1_l5.setImage(LEVEL_COMPLETED);
+
+                a1_l2.setDisable(false);
+                a1_l3.setDisable(false);
+                a1_l4.setDisable(false);
+                a1_l5.setDisable(false);
+
+                a2_l1.setImage(LEVEL_COMPLETED);
+                a2_l2.setImage(LEVEL_COMPLETED);
+                a2_l3.setImage(LEVEL_COMPLETED);
+                a2_l4.setImage(LEVEL_COMPLETED);
+                a2_l5.setImage(LEVEL_COMPLETED);
+
+                a2_l1.setDisable(false);
+                a2_l2.setDisable(false);
+                a2_l3.setDisable(false);
+                a2_l4.setDisable(false);
+                a2_l5.setDisable(false);
+
+                a3_l1.setImage(LEVEL_COMPLETED);
+                a3_l2.setImage(LEVEL_COMPLETED);
+                a3_l3.setImage(LEVEL_COMPLETED);
+
+                a3_l1.setDisable(false);
+                a3_l2.setDisable(false);
+                a3_l3.setDisable(false);
+            }
+
+           
                         
         } catch (Exception e) {
             System.out.println("NO DATA FOUND");
@@ -295,6 +425,10 @@ public class main_menu implements Initializable{
                 a2_l3.setImage(LEVEL_LOCKED);
                 a2_l4.setImage(LEVEL_LOCKED);
                 a2_l5.setImage(LEVEL_LOCKED);
+
+                a3_l1.setImage(LEVEL_LOCKED);
+                a3_l2.setImage(LEVEL_LOCKED);
+                a3_l3.setImage(LEVEL_LOCKED);
         }
 
     }
@@ -432,6 +566,48 @@ public class main_menu implements Initializable{
         Stage primaryStage = (Stage) a2_l5.getScene().getWindow();
         try {
             Parent root = FXMLLoader.load(getClass().getResource(CONFIG_IMG.LESSON.A2_L5)); 
+            Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
+            primaryStage.setScene(scene);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+
+    @FXML
+    private boolean A3_L1() {
+        Stage primaryStage = (Stage) a3_l1.getScene().getWindow();
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(CONFIG_IMG.LESSON.A3_L1)); 
+            Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
+            primaryStage.setScene(scene);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+
+    @FXML
+    private boolean A3_L2() {
+        Stage primaryStage = (Stage) a3_l2.getScene().getWindow();
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(CONFIG_IMG.LESSON.A3_L2)); 
+            Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
+            primaryStage.setScene(scene);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+
+    @FXML
+    private boolean A3_L3() {
+        Stage primaryStage = (Stage) a3_l3.getScene().getWindow();
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(CONFIG_IMG.LESSON.A3_L3)); 
             Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
             primaryStage.setScene(scene);
         } catch (Exception e) {

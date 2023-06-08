@@ -8,7 +8,7 @@ public class questions {
         public String CHOICE_1 = "Yes!";
         public String CHOICE_2 = "YES!";
         public String CHOICE_3 = "yes!";
-        public String CHOICE_4 = "Erorr";
+        public String CHOICE_4 = "Error";
         public String ANSWER = CHOICE_2;
     }
 
@@ -97,7 +97,7 @@ public class questions {
         public String EXAMPLE  = null;
         public String CHOICE_1 = ".getBeginning()";
         public String CHOICE_2 = ".startWith()";
-        public String CHOICE_3 = ".startssWith()";
+        public String CHOICE_3 = ".startsWith()";
         public String CHOICE_4 = ".start()";
         public String ANSWER = CHOICE_3;
     }

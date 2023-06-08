@@ -151,12 +151,12 @@
                                              <children>
                                                 <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                                    <children>
-                                                      <ImageView fitHeight="400.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                      <ImageView fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@../../../media/acts/1.png" />
+                                                            <Image url="@../../../media/acts/2.png" />
                                                          </image>
                                                          <HBox.margin>
-                                                            <Insets left="20.0" top="70.0" />
+                                                            <Insets top="50.0" />
                                                          </HBox.margin>
                                                       </ImageView>
                                                    </children>
@@ -190,7 +190,7 @@
                                                             <Cursor fx:constant="HAND" />
                                                          </cursor>
                                                          <VBox.margin>
-                                                            <Insets left="175.0" top="50.0" />
+                                                            <Insets right="150.0" top="50.0" />
                                                          </VBox.margin>
                                                       </ImageView>
                                                       <ImageView fx:id="a2_l3" fitHeight="50.0" fitWidth="200.0" layoutX="368.0" layoutY="151.0" onMouseClicked="#A2_L3" pickOnBounds="true" preserveRatio="true">
@@ -198,7 +198,7 @@
                                                             <Image url="@../../../media/menu/stage.png" />
                                                          </image>
                                                          <VBox.margin>
-                                                            <Insets left="15.0" top="50.0" />
+                                                            <Insets bottom="10.0" left="175.0" top="50.0" />
                                                          </VBox.margin>
                                                          <cursor>
                                                             <Cursor fx:constant="HAND" />
@@ -220,7 +220,7 @@
                                                             <Image url="@../../../media/menu/stage.png" />
                                                          </image>
                                                          <VBox.margin>
-                                                            <Insets left="200.0" top="50.0" />
+                                                            <Insets top="50.0" />
                                                          </VBox.margin>
                                                          <cursor>
                                                             <Cursor fx:constant="HAND" />
@@ -240,13 +240,102 @@
                                     <Insets top="50.0" />
                                  </VBox.margin>
                               </AnchorPane>
+                              <AnchorPane layoutX="10.0" layoutY="633.0">
+                                 <children>
+                                    <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <AnchorPane prefHeight="75.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <VBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="650.0" styleClass="act">
+                                                         <children>
+                                                            <Label alignment="CENTER" styleClass="act-title" text="ACT 3" />
+                                                            <Label alignment="CENTER" layoutX="204.0" layoutY="13.0" styleClass="act-subtitle" text="Object-Oriented Programming" />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <ImageView fitHeight="400.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../../media/acts/3.png" />
+                                                         </image>
+                                                         <HBox.margin>
+                                                            <Insets left="60.0" top="35.0" />
+                                                         </HBox.margin>
+                                                      </ImageView>
+                                                   </children>
+                                                </HBox>
+                                                <VBox alignment="TOP_CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <ImageView fx:id="a3_l1" fitHeight="50.0" fitWidth="200.0" onMouseClicked="#A3_L1" pickOnBounds="true" preserveRatio="true" styleClass="level-current">
+                                                         <image>
+                                                            <Image url="@../../../media/menu/stage.png" />
+                                                         </image>
+                                                         <cursor>
+                                                            <Cursor fx:constant="HAND" />
+                                                         </cursor>
+                                                      </ImageView>
+                                                      <ImageView fx:id="start3" fitHeight="75.0" fitWidth="100.0" onMouseClicked="#A3_L1" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../../media/menu/start.png" />
+                                                         </image>
+                                                         <VBox.margin>
+                                                            <Insets bottom="25.0" top="-75.0" />
+                                                         </VBox.margin>
+                                                         <cursor>
+                                                            <Cursor fx:constant="HAND" />
+                                                         </cursor>
+                                                      </ImageView>
+                                                      <ImageView fx:id="a3_l2" fitHeight="50.0" fitWidth="200.0" onMouseClicked="#A3_L2" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../../media/menu/stage.png" />
+                                                         </image>
+                                                         <cursor>
+                                                            <Cursor fx:constant="HAND" />
+                                                         </cursor>
+                                                         <VBox.margin>
+                                                            <Insets left="255.0" top="50.0" />
+                                                         </VBox.margin>
+                                                      </ImageView>
+                                                      <ImageView fx:id="a3_l3" fitHeight="50.0" fitWidth="200.0" layoutX="368.0" layoutY="151.0" onMouseClicked="#A3_L3" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../../media/menu/stage.png" />
+                                                         </image>
+                                                         <VBox.margin>
+                                                            <Insets right="25.0" top="50.0" />
+                                                         </VBox.margin>
+                                                         <cursor>
+                                                            <Cursor fx:constant="HAND" />
+                                                         </cursor>
+                                                      </ImageView>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="50.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="50.0" top="50.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
                            </children>
                         </VBox>
                      </content>
                   </ScrollPane>
                </children>
                <padding>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                  <Insets bottom="50.0" left="20.0" right="20.0" top="20.0" />
                </padding></AnchorPane>
          </center>
          <top>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2500.0" prefWidth="1500.0" stylesheets="@../../lesson.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.levels.act_3.l2.lesson">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="75.0" prefWidth="200.0" styleClass="top" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <left>
+                        <Label styleClass="overview" text="LESSON OVERVIEW" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <ImageView fitHeight="40.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../../../../../media/logo/CodeQuest_Logo.png" />
+                           </image>
+                        </ImageView>
+                     </right>
+                  </BorderPane>
+               </children>
+               <padding>
+                  <Insets left="50.0" right="50.0" />
+               </padding>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="100.0" prefWidth="200.0" styleClass="bottom" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="exit" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#RETURN" styleClass="return" text="RETURN">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="start" layoutX="462.0" layoutY="37.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#START" styleClass="start" text="START LEVEL">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </HBox>
+               </children></AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" styleClass="container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="heading" text="Handling Exceptions" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="60.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Exceptions" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="These are problems or errors that occur during execution of a program. It disrupts the normal flow or operation of a program or application, forcing it to terminate abnormally." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="185.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="try block" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Finds a block of code in which an exception can take place." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="755.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="catch block" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Finds a block of code called an exception handler that can manage a specific type of exception." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="301.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="finally block" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Identifies a block of code which will execute. The finally block is the proper place to close down files, recover resources or files, and clean up after the code has been enclosed in the 'try' block." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="541.0" styleClass="item">
+                                       <children>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1500.0">
+                                             <children>
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="public class Main {&#10;  public static void main(String[] args) {&#10;     try {&#10;        int x = 5/0; &#10;        System.out.println(x):&#10;     }&#10;&#10;     catch(ArithmeticException e) &#10;     {&#10;        System.out.println(&quot;Error! Cannot divide by zero.&quot;);&#10;     }&#10;&#10;     finally&#10;     {&#10;        System.out.println(&quot;The try-catch block execution has been finished.&quot;);&#10;     }&#10;  }&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </VBox>
+                                                <VBox>
+                                                   <children>
+                                                      <TextFlow maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="In the code above, the &#10;" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="try" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" block will divide the values in variable " wrapText="true" />
+                                                            <Label layoutX="250.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="x" wrapText="true" />
+                                                            <Label layoutX="303.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=", which is " wrapText="true" />
+                                                            <Label layoutX="707.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="5/0" wrapText="true" />
+                                                            <Label layoutX="738.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                            <Label minHeight="-Infinity" styleClass="definition" text=" Since dividing by zero is undefined, it will return an" wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                      <TextFlow layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" minWidth="-Infinity">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="exception, which will trigger the " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="catch" wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" block. Then, the " wrapText="true" />
+                                                            <Label layoutX="605.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="finally" wrapText="true" />
+                                                            <Label layoutX="424.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" block will execute." wrapText="true" />
+                                                         </children>
+                                                      </TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="60.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="heading" text="Exception Classes" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="541.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="ArithmeticException" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Arithmetic errors such as division by 0." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="1411.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="FileNotFoundException" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Reference to a file that cannot be found." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="1527.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="NullPointerException" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Reference to an object that has not been instantiated." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="1642.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="NumberFormatException" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Use of an illegal number format." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="1757.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="InputMismatchException" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="If the next input (toxen) is not an Integer, or is out of range." wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

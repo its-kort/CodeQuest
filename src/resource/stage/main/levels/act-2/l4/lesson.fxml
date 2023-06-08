@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3500.0" prefWidth="2000.0" stylesheets="@../../lesson.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.levels.act_1.l4.lesson">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="4000.0" prefWidth="1500.0" stylesheets="@../../lesson.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.levels.act_2.l4.lesson">
    <children>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -70,7 +70,7 @@
                                        <children>
                                           <VBox>
                                              <children>
-                                                <Label minHeight="-Infinity" styleClass="heading" text="Relational Operator" wrapText="true" />
+                                                <Label minHeight="-Infinity" styleClass="heading" text="Classes, Objects, and Modifiers" wrapText="true" />
                                              </children>
                                           </VBox>
                                        </children>
@@ -79,17 +79,17 @@
                                        <children>
                                           <VBox>
                                              <children>
-                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Relational Operator" wrapText="true" />
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Class" wrapText="true" />
                                              </children>
                                           </VBox>
                                           <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
                                              <children>
-                                                <Label minHeight="-Infinity" styleClass="definition" text="Determines whether one operand is less than, equal to, or greater than the other. The Relational operators result to a boolean value of either true or false." wrapText="true" />
+                                                <Label minHeight="-Infinity" styleClass="definition" text="The blueprint from which individual objects are made." wrapText="true" />
                                                 <VBox>
                                                    <children>
                                                       <AnchorPane>
                                                          <children>
-                                                            <Label minHeight="-Infinity" styleClass="example" text="int x = 3;&#10;int y = 3;&#10;x == y;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                            <Label minHeight="-Infinity" styleClass="example" text="public class myClass {&#10;   int num = 10;&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                                          </children>
                                                       </AnchorPane>
                                                    </children>
@@ -98,240 +98,88 @@
                                                    </VBox.margin>
                                                 </VBox>
                                                 <TextFlow>
+                                                   <children>
+                                                      <Label minHeight="-Infinity" styleClass="definition" text="In the code above, the class is called " wrapText="true" />
+                                                      <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="myClass" wrapText="true" />
+                                                      <Label layoutX="418.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                   </children>
                                                    <VBox.margin>
                                                       <Insets top="15.0" />
                                                    </VBox.margin>
-                                                   <children>
-                                                      <Label minHeight="-Infinity" styleClass="definition" text="The resulting code will be true." wrapText="true" />
-                                                   </children>
                                                 </TextFlow>
                                              </children>
                                           </VBox>
                                        </children>
                                     </HBox>
-                                    <HBox layoutX="60.0" layoutY="60.0" styleClass="item">
+                                    <HBox layoutX="60.0" layoutY="185.0" styleClass="item">
                                        <children>
                                           <VBox>
                                              <children>
-                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Equal to ( == )" wrapText="true" />
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Object" wrapText="true" />
                                              </children>
                                           </VBox>
                                           <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
                                              <children>
-                                                <Label minHeight="-Infinity" styleClass="definition" text="Determines if the left operand is equal to the right operand." wrapText="true" />
+                                                <Label minHeight="-Infinity" styleClass="definition" text="An instance of a class, where each object have different states or behaviors." wrapText="true" />
                                                 <VBox>
-                                                   <children>
-                                                      <AnchorPane>
-                                                         <children>
-                                                            <Label minHeight="-Infinity" styleClass="example" text="int x = 10;&#10;int y = 10;&#10;int z = 11;&#10;&#10;x == y;&#10;x == z;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                                                         </children>
-                                                      </AnchorPane>
-                                                      <TextFlow>
-                                                         <VBox.margin>
-                                                            <Insets top="15.0" />
-                                                         </VBox.margin>
-                                                         <children>
-                                                            <Label minHeight="-Infinity" styleClass="definition" text="In the code above, " wrapText="true" />
-                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="x == y" wrapText="true" />
-                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" will return true; however, " wrapText="true" />
-                                                            <Label layoutX="395.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="x == z" wrapText="true" />
-                                                            <Label layoutX="502.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="will return false." wrapText="true" />
-                                                         </children>
-                                                      </TextFlow>
-                                                   </children>
-                                                   <VBox.margin>
-                                                      <Insets top="15.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </HBox>
-                                    <HBox layoutX="60.0" layoutY="60.0" styleClass="item">
-                                       <children>
-                                          <VBox>
-                                             <children>
-                                                <TextFlow>
-                                                   <children>
-                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Not equal to ( != )" wrapText="true" />
-                                                   </children>
-                                                </TextFlow>
-                                             </children>
-                                          </VBox>
-                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
-                                             <children>
-                                                <Label minHeight="-Infinity" styleClass="definition" text="Determines if the left operand is not equal to the right operand — the opposite of the equal to operand." wrapText="true" />
-                                                <VBox>
-                                                   <children>
-                                                      <AnchorPane>
-                                                         <children>
-                                                            <Label minHeight="-Infinity" styleClass="example" text="int x = 10;&#10;int y = 10;&#10;int z = 11;&#10;&#10;x != y;&#10;x != z;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                                                         </children>
-                                                      </AnchorPane>
-                                                   </children>
-                                                   <VBox.margin>
-                                                      <Insets top="15.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <TextFlow>
                                                    <VBox.margin>
                                                       <Insets top="15.0" />
                                                    </VBox.margin>
                                                    <children>
-                                                      <Label minHeight="-Infinity" styleClass="definition" text="The operation above " wrapText="true" />
-                                                      <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="x != y" wrapText="true" />
-                                                      <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" will return false, while " wrapText="true" />
-                                                      <Label layoutX="237.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="x != z" wrapText="true" />
-                                                      <Label layoutX="322.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" will return true." wrapText="true" />
-                                                   </children>
-                                                </TextFlow>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </HBox>
-                                    <HBox layoutX="60.0" layoutY="841.0" styleClass="item">
-                                       <children>
-                                          <VBox>
-                                             <children>
-                                                <TextFlow>
-                                                   <children>
-                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Greater than ( &gt; )" wrapText="true" />
-                                                   </children>
-                                                </TextFlow>
-                                             </children>
-                                          </VBox>
-                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
-                                             <children>
-                                                <Label minHeight="-Infinity" styleClass="definition" text="Determines if the left operand is greater than the right operand." wrapText="true" />
-                                                <VBox>
-                                                   <children>
-                                                      <AnchorPane>
+                                                      <VBox>
                                                          <children>
-                                                            <Label minHeight="-Infinity" styleClass="example" text="int x = 5;&#10;int y = 2;&#10;&#10;x &gt; y;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                            <AnchorPane>
+                                                               <children>
+                                                                  <Label minHeight="-Infinity" styleClass="example" text="public class myClass {&#10;   int num = 10;&#10;&#10;   public static void main(String[] args) {&#10;       myClass myObject = new myClass();&#10;       System.out.println(myObject.num);&#10;  }&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                               </children>
+                                                            </AnchorPane>
                                                          </children>
-                                                      </AnchorPane>
-                                                   </children>
-                                                   <VBox.margin>
-                                                      <Insets top="15.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                                <TextFlow>
-                                                   <VBox.margin>
-                                                      <Insets top="15.0" />
-                                                   </VBox.margin>
-                                                   <children>
-                                                      <Label minHeight="-Infinity" styleClass="definition" text="The operation above would return true." wrapText="true" />
-                                                   </children>
-                                                </TextFlow>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </HBox>
-                                    <HBox layoutX="60.0" layoutY="841.0" styleClass="item">
-                                       <children>
-                                          <VBox>
-                                             <children>
-                                                <TextFlow>
-                                                   <children>
-                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Less than ( &lt; )" wrapText="true" />
-                                                   </children>
-                                                </TextFlow>
-                                             </children>
-                                          </VBox>
-                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
-                                             <children>
-                                                <Label minHeight="-Infinity" styleClass="definition" text="Determines if the left operand is less than the right operand." wrapText="true" />
-                                                <VBox>
-                                                   <children>
-                                                      <AnchorPane>
-                                                         <children>
-                                                            <Label minHeight="-Infinity" styleClass="example" text="int x = 5;&#10;int y = 10;&#10;&#10;x &lt; y;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                                                         </children>
-                                                      </AnchorPane>
+                                                      </VBox>
                                                       <TextFlow>
                                                          <children>
-                                                            <Label minHeight="-Infinity" styleClass="definition" text="The operation above would return true." wrapText="true" />
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="The code will run and print  " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="10" wrapText="true" />
+                                                            <Label layoutX="418.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" Since the object " wrapText="true" />
+                                                            <Label layoutX="299.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="myObject" wrapText="true" />
+                                                            <Label layoutX="347.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" created an instance of the class" wrapText="true" />
                                                          </children>
                                                          <VBox.margin>
                                                             <Insets top="15.0" />
                                                          </VBox.margin>
                                                       </TextFlow>
+                                                      <TextFlow layoutX="10.0" layoutY="237.0">
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="definition" text="included the attribute " wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="num" wrapText="true" />
+                                                            <Label layoutX="418.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                            <Label layoutX="10.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" The system will print the value of " wrapText="true" />
+                                                            <Label layoutX="299.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="num" wrapText="true" />
+                                                            <Label layoutX="306.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                      </TextFlow>
                                                    </children>
-                                                   <VBox.margin>
-                                                      <Insets top="15.0" />
-                                                   </VBox.margin>
                                                 </VBox>
                                              </children>
                                           </VBox>
                                        </children>
                                     </HBox>
-                                    <HBox layoutX="60.0" layoutY="996.0" styleClass="item">
+                                    <HBox layoutX="60.0" layoutY="1111.0" styleClass="item">
                                        <children>
                                           <VBox>
                                              <children>
-                                                <TextFlow>
-                                                   <children>
-                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Greater than or equal to ( &gt;= )" textAlignment="CENTER" wrapText="true" />
-                                                   </children>
-                                                </TextFlow>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Modifiers" wrapText="true" />
                                              </children>
                                           </VBox>
                                           <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
                                              <children>
-                                                <Label minHeight="-Infinity" styleClass="definition" text="Determines if the left operand is greater than or equal to the right operand." wrapText="true" />
+                                                <Label minHeight="-Infinity" styleClass="definition" text="A keyword that is used to modify the behavior or characteristics of classes, methods, variables, and other program elements. They also control access, visibility, and other aspects of these elements." wrapText="true" />
                                                 <VBox>
                                                    <children>
-                                                      <AnchorPane>
-                                                         <children>
-                                                            <Label minHeight="-Infinity" styleClass="example" text="int x = 5;&#10;int y = 2;&#10;int z = 5; &#10;&#10;x &gt;= y;&#10;x &gt;= z;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                                                         </children>
-                                                      </AnchorPane>
-                                                      <TextFlow>
-                                                         <children>
-                                                            <Label minHeight="-Infinity" styleClass="definition" text="Both operations would return true." wrapText="true" />
-                                                         </children>
-                                                         <VBox.margin>
-                                                            <Insets top="15.0" />
-                                                         </VBox.margin>
-                                                      </TextFlow>
-                                                   </children>
-                                                   <VBox.margin>
-                                                      <Insets top="15.0" />
-                                                   </VBox.margin>
-                                                </VBox>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                    </HBox>
-                                    <HBox layoutX="60.0" layoutY="1151.0" styleClass="item">
-                                       <children>
-                                          <VBox>
-                                             <children>
-                                                <TextFlow>
-                                                   <children>
-                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="Less than or equal to &#10;( &lt;= )" textAlignment="CENTER" wrapText="true" />
-                                                   </children>
-                                                </TextFlow>
-                                             </children>
-                                          </VBox>
-                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
-                                             <children>
-                                                <Label minHeight="-Infinity" styleClass="definition" text="Determines if the left operand is less than or equal to the right operand." wrapText="true" />
-                                                <VBox>
-                                                   <children>
-                                                      <AnchorPane>
-                                                         <children>
-                                                            <Label layoutY="2.0" minHeight="-Infinity" styleClass="example" text="int x = 6;&#10;int y = 12;&#10;int z = 6; &#10;&#10;x &lt;= y;&#10;x &lt;= z;" wrapText="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0" />
-                                                         </children>
-                                                      </AnchorPane>
-                                                      <TextFlow>
-                                                         <children>
-                                                            <Label minHeight="-Infinity" styleClass="definition" text="Both operations would return true." wrapText="true" />
-                                                         </children>
-                                                         <VBox.margin>
-                                                            <Insets top="15.0" />
-                                                         </VBox.margin>
-                                                      </TextFlow>
+                                                      <AnchorPane />
                                                    </children>
                                                    <VBox.margin>
                                                       <Insets top="15.0" />
@@ -345,42 +193,114 @@
                                        <children>
                                           <VBox>
                                              <children>
-                                                <Label minHeight="-Infinity" styleClass="heading" text="Conditional Operator" wrapText="true" />
+                                                <Label minHeight="-Infinity" styleClass="heading" text="Access Modifiers" wrapText="true" />
                                              </children>
                                           </VBox>
                                        </children>
                                     </HBox>
-                                    <HBox layoutX="60.0" layoutY="2001.0" styleClass="item">
+                                    <HBox layoutX="60.0" layoutY="185.0" styleClass="item">
                                        <children>
                                           <VBox>
                                              <children>
-                                                <TextFlow>
-                                                   <children>
-                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="AND ( &amp;&amp; )" textAlignment="CENTER" wrapText="true" />
-                                                   </children>
-                                                </TextFlow>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="public" wrapText="true" />
                                              </children>
                                           </VBox>
                                           <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
                                              <children>
-                                                <Label minHeight="-Infinity" styleClass="definition" text="Returns true if both operands are evaluated to be true." wrapText="true" />
+                                                <Label minHeight="-Infinity" styleClass="definition" text="This allows access from anywhere." wrapText="true" />
                                                 <VBox>
                                                    <children>
                                                       <AnchorPane>
                                                          <children>
-                                                            <Label layoutY="2.0" minHeight="-Infinity" styleClass="example" text="int x = 1;&#10;int y = 2;&#10;int z = 3; &#10;&#10;x &lt; y &amp;&amp; y &lt; z;&#10;x &gt; y &amp;&amp; y &lt; z;" wrapText="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0" />
+                                                            <Label layoutX="-1.0" layoutY="1.0" minHeight="-Infinity" styleClass="example" text="class myClass1 {&#10;   public int x = 10;&#10;   public int y = 5;&#10;}&#10;&#10;class myClass2 {&#10;   myClass1 num = new myClass1();&#10;   public int sum = 0;&#10;   sum = num.x + num.y;&#10;&#10;   System.out.println(sum);&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                                          </children>
                                                       </AnchorPane>
-                                                      <TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                                <TextFlow>
+                                                   <children>
+                                                      <Label minHeight="-Infinity" styleClass="definition" text="In the code above, the result will be " wrapText="true" />
+                                                      <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="15" wrapText="true" />
+                                                      <Label layoutX="418.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text="." wrapText="true" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="587.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="private" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="This restricts access to only be used within the same class." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
                                                          <children>
-                                                            <Label minHeight="-Infinity" styleClass="definition" text="The first operation will return true; however, the second operation will return false because " wrapText="true" />
-                                                            <Label minHeight="-Infinity" styleClass="example" text="x &gt; y" wrapText="true" />
-                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text=" is false." wrapText="true" />
+                                                            <Label minHeight="-Infinity" styleClass="example" text="class myClass1 {&#10;   private int x = 10;&#10;   public int y = 5;&#10;}&#10;&#10;class myClass2 {&#10;   myClass1 num = new myClass1();&#10;   public int sum = 0;&#10;   sum = num.x + num.y;&#10;&#10;   System.out.println(sum);&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                                          </children>
-                                                         <VBox.margin>
-                                                            <Insets top="15.0" />
-                                                         </VBox.margin>
-                                                      </TextFlow>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                                <TextFlow>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                   <children>
+                                                      <Label minHeight="-Infinity" styleClass="definition" text="In the code above, the result will return to an error as the variable " wrapText="true" />
+                                                      <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="example" text="x" wrapText="true" />
+                                                      <Label layoutX="418.0" layoutY="19.0" minHeight="-Infinity" styleClass="definition" text=" cannot be used" wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                                <TextFlow layoutX="10.0" layoutY="374.0">
+                                                   <children>
+                                                      <Label minHeight="-Infinity" styleClass="definition" text="another class." wrapText="true" />
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="1034.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="heading" text="Non-Access Modifiers" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="1159.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="static" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Applies to methods and variables to make them belong to the class rather than instances of the class." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="public static add(int x, int y) {&#10;&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
                                                    </children>
                                                    <VBox.margin>
                                                       <Insets top="15.0" />
@@ -390,38 +310,127 @@
                                           </VBox>
                                        </children>
                                     </HBox>
-                                    <HBox layoutX="60.0" layoutY="2443.0" styleClass="item">
+                                    <HBox layoutX="60.0" layoutY="1637.0" styleClass="item">
                                        <children>
                                           <VBox>
                                              <children>
-                                                <TextFlow>
-                                                   <children>
-                                                      <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key" text="OR ( || )" textAlignment="CENTER" wrapText="true" />
-                                                   </children>
-                                                </TextFlow>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="final" wrapText="true" />
                                              </children>
                                           </VBox>
                                           <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
                                              <children>
-                                                <Label minHeight="-Infinity" styleClass="definition" text="Returns true if at least one of the operands are evaluated to be true." wrapText="true" />
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Indicates that a variable cannot be modified or a class cannot be subclassed. " wrapText="true" />
                                                 <VBox>
                                                    <children>
                                                       <AnchorPane>
                                                          <children>
-                                                            <Label layoutY="2.0" minHeight="-Infinity" styleClass="example" text="int x = 1;&#10;int y = 2;&#10;int z = 3; &#10;&#10;x &lt; y || y &lt; z;&#10;x &gt; y || y &lt; z;" wrapText="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0" />
+                                                            <Label minHeight="-Infinity" styleClass="example" text="final int pi = 3.14;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                                          </children>
                                                       </AnchorPane>
-                                                      <TextFlow>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="2387.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="abstract" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Applies to classes or methods and indicates that they have no implementation and must be overridden in subclasses." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
                                                          <children>
-                                                            <Label minHeight="-Infinity" styleClass="definition" text="The first operation will return true because both operands are true. The second operation will" wrapText="true" />
-                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text="return true even if " wrapText="true" />
-                                                            <Label minHeight="-Infinity" styleClass="example" text="x &gt; y" wrapText="true" />
-                                                            <Label layoutX="10.0" layoutY="10.0" minHeight="-Infinity" styleClass="definition" text=" is false." wrapText="true" />
+                                                            <Label minHeight="-Infinity" styleClass="example" text="public abstract void add();" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                                          </children>
-                                                         <VBox.margin>
-                                                            <Insets top="15.0" />
-                                                         </VBox.margin>
-                                                      </TextFlow>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="2502.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="synchronized" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Applies to classes or methods and indicates that they have no implementation and must be overridden in subclasses." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="public synchronized void increment() {&#10;   x++;&#10;}" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="2769.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="volatile" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Indicates that a variable may be accessed by multiple threads and should not be cached." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="private volatile static int x;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="60.0" layoutY="2889.0" styleClass="item">
+                                       <children>
+                                          <VBox>
+                                             <children>
+                                                <Label alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="key-code" text="transient" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                          <VBox maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1000.0">
+                                             <children>
+                                                <Label minHeight="-Infinity" styleClass="definition" text="Specifies that a variable should not be serialized." wrapText="true" />
+                                                <VBox>
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label minHeight="-Infinity" styleClass="example" text="public transient int copies;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
                                                    </children>
                                                    <VBox.margin>
                                                       <Insets top="15.0" />
