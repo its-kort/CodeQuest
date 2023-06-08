@@ -10,6 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Screen;
@@ -37,6 +38,8 @@ public class main_menu implements Initializable{
     @FXML private ImageView a3_l1;
     @FXML private ImageView a3_l2;
     @FXML private ImageView a3_l3;
+
+    @FXML private Button exit;
     
     Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
 
@@ -616,7 +619,20 @@ public class main_menu implements Initializable{
 
         return false;
     }
-    
+
+    @FXML
+    public void EXIT() {
+        Stage primaryStage = (Stage) exit.getScene().getWindow();
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(CONFIG_IMG.START)); 
+            Scene scene = new Scene(root, screenSize.getWidth(), screenSize.getHeight());
+            primaryStage.setScene(scene);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         loadData();

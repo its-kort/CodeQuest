@@ -8,6 +8,7 @@ public class resource {
     public Image LEVEL_COMPLETED = new Image("resource/media/menu/stage_complete.png");
 
     public String HOME = "/resource/stage/main/menu/main_menu.fxml";
+    public String START = "/resource/stage/main/menu/start_screen.fxml";
 
     public int LIVES           = 23;
     public int L5_LIVES        = LIVES + 2;

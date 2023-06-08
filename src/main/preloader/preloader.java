@@ -20,8 +20,8 @@ public class preloader implements Initializable {
 
     @FXML private ProgressBar ProgressBar;
 
-    // double delay = .035;
-    double delay = .005;
+    double delay = .035;
+    // double delay = .005;
 
 
     main_menu config = new main_menu();

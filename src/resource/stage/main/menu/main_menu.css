@@ -33,6 +33,9 @@
     -bg-hints   : #C8B866;
     
     -bg-exit    : #863232;
+
+    -no-main        : #863232 ;
+    -no-shadow      : #4d2929;
 }
 
 /* Styles */
@@ -49,46 +52,21 @@
     -fx-border-color: -bg-light-grey;
 }
 
-.heart {
-    -fx-shape           : "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z";
-    -fx-background-color: -bg-heart;
-    -fx-pref-width      : 25;
-    -fx-pref-height     : 20;
-    -fx-max-height      : 22;
-}
-
-.heart-empty {
-    -fx-shape           : "M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z";
-    -fx-background-color: transparent;
-    -fx-border-width    : 3;
-    -fx-border-color    : -bg-heart;
-    -fx-pref-width      : 25;
-    -fx-pref-height     : 20;
-    -fx-max-height      : 22;
-}
-
-.regen {
-    -fx-font-family : "Helios Antique Black";
-    -fx-text-fill   : -bg-white;
-    -fx-font-size   : 12;
-}
-
-.hints {
-    -fx-border-width    : 1.5;
-    -fx-border-color    : -bg-hints;
-    -fx-border-radius   : 4;
-}
-
-.hints-label {
-    -fx-font-family : "Helios Antique Black";
-    -fx-text-fill   : -bg-white;
-    -fx-font-size   : 15;
-}
-/* CENTER */
+/* .center {
+    -fx-background-image: url("../../../media/menu/polka.png");
+    -fx-background-size: 50;
+} */
 
 .scroll-pane, .scroll-pane > .viewport {
     -fx-background-color: transparent;
+    
+
     -fx-padding         : 0;
+}
+
+.polka{
+    -fx-background-image: url("../../../media/menu/polka.png");
+    -fx-background-size: 35, cover;
 }
 
 .scroll-pane .scroll-bar:vertical {
@@ -136,4 +114,19 @@
     -fx-text-fill   : -white;
     -fx-padding     : 0;
 }
+
+.exit {
+    -fx-padding         : 10;
+    -fx-pref-width      : 120;
+    -fx-font-family: "Helios Antique Black";
+    -fx-font-size: 16;
+    -fx-text-fill: -white;
+    /* -fx-background-radius: 3; */
+    -fx-background-color: transparent;
+    -fx-border-width    : 2;
+    -fx-border-radius   : 3;
+    -fx-border-color   : -no-main;
+    /* -fx-effect          : dropshadow(gaussian, -no-shadow, 0, 0, 0, 10); */
+}
+
 /* LEVEL */

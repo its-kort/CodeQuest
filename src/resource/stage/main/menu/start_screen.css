@@ -34,6 +34,9 @@
     
     -bg-exit    : #863232;
 
+    -yes-main       : #78a53d;
+    -yes-shadow     : #475d29;
+
     -no-main        : #863232 ;
     -no-shadow      : #4d2929;
 }
@@ -41,6 +44,8 @@
 /* Styles */
 .root {
     -fx-background-color: -bg-grey;
+    -fx-background-image: url("../../../media/menu/circle.png");
+    -fx-background-size: cover;
 }
 
 .container {
@@ -52,21 +57,9 @@
     -fx-border-color: -bg-light-grey;
 }
 
-/* .center {
-    -fx-background-image: url("../../../media/menu/polka.png");
-    -fx-background-size: 50;
-} */
-
 .scroll-pane, .scroll-pane > .viewport {
     -fx-background-color: transparent;
-    
-
     -fx-padding         : 0;
-}
-
-.polka{
-    -fx-background-image: url("../../../media/menu/polka.png");
-    -fx-background-size: 35, cover;
 }
 
 .scroll-pane .scroll-bar:vertical {
@@ -93,40 +86,24 @@
 
 /* ACTS */
 
-.act {
-    -fx-background-color    : -logo-green;
-    -fx-background-radius   : 5;
-    -fx-pref-width          : 750;
-    -fx-padding             : 10;
-    -fx-transition: 0.5s;
-}
-
-.act-title {
-    -fx-font-family : "Raitor Regular";
-    -fx-font-size   : 25;
-    -fx-text-fill   : -white;
-    -fx-padding     : 0;
-}
-
-.act-subtitle {
-    -fx-font-family : "Helios Antique Medium";
-    -fx-font-size   : 18;
-    -fx-text-fill   : -white;
-    -fx-padding     : 0;
-}
-
-.exit {
-    -fx-padding         : 10;
-    -fx-pref-width      : 120;
+.act, .no {
+    -fx-pref-width: 200;
     -fx-font-family: "Helios Antique Black";
-    -fx-font-size: 16;
+    -fx-font-size: 17;
     -fx-text-fill: -white;
-    /* -fx-background-radius: 3; */
-    -fx-background-color: transparent;
-    -fx-border-width    : 2;
-    -fx-border-radius   : 3;
-    -fx-border-color   : -no-main;
-    /* -fx-effect          : dropshadow(gaussian, -no-shadow, 0, 0, 0, 10); */
+    -fx-background-radius: 3;
 }
+
+.act {
+    -fx-background-color: -yes-main;
+    -fx-effect          : dropshadow(gaussian, -yes-shadow, 0, 0, 0, 10);
+}
+
 
 /* LEVEL */
+
+.no{
+    
+    -fx-background-color: -no-main;
+    -fx-effect          : dropshadow(gaussian, -no-shadow, 0, 0, 0, 10);
+}
