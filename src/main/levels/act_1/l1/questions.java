@@ -53,7 +53,7 @@ public class questions {
     }
 
     public class Q6 {
-        public String QUESTION = "What is the following line of code?";
+        public String QUESTION = "What is name in the following line of code?";
         public String EXAMPLE  = "int name = \"John Doe\";";
         public String CHOICE_1 = "Data";
         public String CHOICE_2 = "Statement";

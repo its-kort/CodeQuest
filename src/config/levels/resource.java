@@ -10,7 +10,7 @@ public class resource {
     public String HOME = "/resource/stage/main/menu/main_menu.fxml";
     public String START = "/resource/stage/main/menu/start_screen.fxml";
 
-    public int LIVES           = 23;
+    public int LIVES           = 3;
     public int L5_LIVES        = LIVES + 2;
     public int TOTAL_QUESTIONS = 10;
     public double THRESHOLD    = 0.8;
