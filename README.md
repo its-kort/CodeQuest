@@ -11,13 +11,6 @@ Grading Software Guide
 - `lib` - Contains libraries and dependencies that are needed within the program.
 - `src` - Contains the main files that run the program.
 
-#### `SRC` Folders
-- `controller` - Main java files that controls the GUI and runs the backend of the program.
-- `database` - Files that are needed in connecting to the MongoDB database.
-- `launcher` - The starting file(s) to initalize or start the program.
-- `resource` - Contains files and assets that are essential in the frontend of the program, such as the UI/UX.
-- `test` - The playground for testing out code.
-
 ### Developers
 [![Kurt](https://img.shields.io/badge/Lead%20Developer-Kurt%20Nicolo%20A.%20Deslate-%23d4ffbf)](https://www.facebook.com/KurtNDeslate/)
 
